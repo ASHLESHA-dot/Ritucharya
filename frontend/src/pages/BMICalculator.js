@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 
 function BMICalculator({ user, token, handleLogout }) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     weight: '',
     height: '',
     age: '',
     gender: '',
   });
-  const [bmiResult, setBmiResult] = useState(null);
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -22,10 +22,6 @@ function BMICalculator({ user, token, handleLogout }) {
         height: user.height || '',
         age: user.age || '',
         gender: user.gender || '',
-      });
-      setBmiResult({
-        bmi: user.bmi,
-        bmiCategory: user.bmiCategory,
       });
     }
   }, [user]);
@@ -38,19 +34,9 @@ function BMICalculator({ user, token, handleLogout }) {
     }));
   };
 
-  const getBmiCategoryClass = (category) => {
-    const categoryLower = category.toLowerCase();
-    if (categoryLower.includes('underweight')) return 'underweight';
-    if (categoryLower.includes('normal')) return 'normal';
-    if (categoryLower.includes('overweight')) return 'overweight';
-    if (categoryLower.includes('obese')) return 'obese';
-    return '';
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    setSuccess('');
     setLoading(true);
 
     try {
@@ -64,12 +50,19 @@ function BMICalculator({ user, token, handleLogout }) {
         }
       );
 
-      setBmiResult({
-        bmi: response.data.bmi,
-        bmiCategory: response.data.bmiCategory,
+      // Navigate to BMI results page with BMI data
+      navigate('/bmi-results', {
+        state: {
+          bmiData: {
+            bmi: response.data.bmi,
+            bmiCategory: response.data.bmiCategory,
+            weight: formData.weight,
+            height: formData.height,
+            age: formData.age,
+            gender: formData.gender,
+          },
+        },
       });
-
-      setSuccess('BMI calculated successfully!');
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to calculate BMI. Please try again.');
     } finally {
@@ -95,7 +88,6 @@ function BMICalculator({ user, token, handleLogout }) {
       )}
 
       {error && <div className="error">{error}</div>}
-      {success && <div className="success">{success}</div>}
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -163,23 +155,6 @@ function BMICalculator({ user, token, handleLogout }) {
           {loading ? 'Calculating...' : 'Calculate BMI'}
         </button>
       </form>
-
-      {bmiResult && (
-        <div className="bmi-result">
-          <h2>Your BMI Result</h2>
-          <div className="bmi-value">{bmiResult.bmi}</div>
-          <div className={`bmi-category ${getBmiCategoryClass(bmiResult.bmiCategory)}`}>
-            {bmiResult.bmiCategory}
-          </div>
-          <div style={{ marginTop: '20px', fontSize: '14px', color: '#666' }}>
-            <p><strong>BMI Categories:</strong></p>
-            <p>Underweight: BMI &lt; 18.5</p>
-            <p>Normal weight: BMI 18.5 - 24.9</p>
-            <p>Overweight: BMI 25.0 - 29.9</p>
-            <p>Obese: BMI ≥ 30.0</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

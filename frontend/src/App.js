@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import BMICalculator from './pages/BMICalculator';
+import BMIResultsPage from './pages/BMIResultsPage';
+import WeatherPage from './pages/WeatherPage';
 import './App.css';
 
 function App() {
@@ -31,6 +33,14 @@ function App() {
           <Route
             path="/bmi"
             element={token ? <BMICalculator user={user} token={token} handleLogout={handleLogout} /> : <Navigate to="/login" />}
+          />
+          <Route
+            path="/bmi-results"
+            element={token ? <BMIResultsPage handleLogout={handleLogout} /> : <Navigate to="/login" />}
+          />
+          <Route
+            path="/weather"
+            element={token ? <WeatherPage token={token} handleLogout={handleLogout} /> : <Navigate to="/login" />}
           />
           <Route path="/" element={token ? <Navigate to="/bmi" /> : <Navigate to="/login" />} />
         </Routes>
