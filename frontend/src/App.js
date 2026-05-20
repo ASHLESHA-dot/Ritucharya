@@ -4,7 +4,9 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import BMICalculator from './pages/BMICalculator';
 import BMIResultsPage from './pages/BMIResultsPage';
+import PrakritiPage from './pages/PrakritiPage';
 import WeatherPage from './pages/WeatherPage';
+import RitucharyaPage from './pages/RitucharyaPage';
 import './App.css';
 
 function App() {
@@ -39,8 +41,16 @@ function App() {
             element={token ? <BMIResultsPage handleLogout={handleLogout} /> : <Navigate to="/login" />}
           />
           <Route
+            path="/prakriti"
+            element={token ? <PrakritiPage token={token} handleLogout={handleLogout} /> : <Navigate to="/login" />}
+          />
+          <Route
             path="/weather"
             element={token ? <WeatherPage token={token} handleLogout={handleLogout} /> : <Navigate to="/login" />}
+          />
+          <Route
+            path="/ritucharya"
+            element={token ? <RitucharyaPage token={token} handleLogout={handleLogout} /> : <Navigate to="/login" />}
           />
           <Route path="/" element={token ? <Navigate to="/bmi" /> : <Navigate to="/login" />} />
         </Routes>

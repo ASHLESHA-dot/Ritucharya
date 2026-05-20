@@ -38,6 +38,28 @@ const userSchema = new mongoose.Schema({
   bmiCategory: {
     type: String,
   },
+  prakriti_data: {
+    primary_prakriti: String,
+    prakriti_type: String,
+    all_combinations: Array,
+    vata_score: Number,
+    pitta_score: Number,
+    kapha_score: Number,
+  },
+  prakriti_updated_at: {
+    type: Date,
+  },
+  current_weather: {
+    temperature: Number,
+    humidity: Number,
+    condition: String,
+    city: String,
+    windSpeed: Number,
+    feelsLike: Number,
+  },
+  weather_updated_at: {
+    type: Date,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

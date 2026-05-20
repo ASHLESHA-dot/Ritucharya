@@ -45,49 +45,41 @@ function BMIResultsPage({ handleLogout }) {
           {bmiData.bmiCategory}
         </div>
 
-        <div style={{ marginTop: '25px', fontSize: '14px', color: '#666', borderTop: '2px solid #e0e0e0', paddingTop: '20px' }}>
-          <p><strong>Your Details:</strong></p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
-            <div style={{ background: '#f8f9fa', padding: '10px', borderRadius: '5px' }}>
-              <p style={{ margin: '0 0 5px 0', fontSize: '12px', color: '#999' }}>Weight</p>
-              <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#333' }}>{bmiData.weight} kg</p>
+        <div className="section">
+          <p style={{ margin: 0 }}><strong>Your Details:</strong></p>
+          <div className="grid-2" style={{ marginTop: 12 }}>
+            <div className="stat-card">
+              <p className="stat-label">Weight</p>
+              <p className="stat-value">{bmiData.weight} kg</p>
             </div>
-            <div style={{ background: '#f8f9fa', padding: '10px', borderRadius: '5px' }}>
-              <p style={{ margin: '0 0 5px 0', fontSize: '12px', color: '#999' }}>Height</p>
-              <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#333' }}>{bmiData.height} cm</p>
+            <div className="stat-card">
+              <p className="stat-label">Height</p>
+              <p className="stat-value">{bmiData.height} cm</p>
             </div>
-            <div style={{ background: '#f8f9fa', padding: '10px', borderRadius: '5px' }}>
-              <p style={{ margin: '0 0 5px 0', fontSize: '12px', color: '#999' }}>Age</p>
-              <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#333' }}>{bmiData.age} years</p>
+            <div className="stat-card">
+              <p className="stat-label">Age</p>
+              <p className="stat-value">{bmiData.age} years</p>
             </div>
-            <div style={{ background: '#f8f9fa', padding: '10px', borderRadius: '5px' }}>
-              <p style={{ margin: '0 0 5px 0', fontSize: '12px', color: '#999' }}>Gender</p>
-              <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#333' }}>{bmiData.gender}</p>
+            <div className="stat-card">
+              <p className="stat-label">Gender</p>
+              <p className="stat-value">{bmiData.gender}</p>
             </div>
           </div>
         </div>
 
-        <div style={{ marginTop: '20px', fontSize: '13px', color: '#666', borderTop: '1px solid #e0e0e0', paddingTop: '15px' }}>
-          <p><strong>BMI Categories:</strong></p>
-          <p>Underweight: BMI &lt; 18.5</p>
-          <p>Normal weight: BMI 18.5 - 24.9</p>
-          <p>Overweight: BMI 25.0 - 29.9</p>
-          <p>Obese: BMI ≥ 30.0</p>
+        <div className="section">
+          <p style={{ margin: 0 }}><strong>BMI Categories:</strong></p>
+          <p style={{ margin: '10px 0 0 0' }}>Underweight: BMI &lt; 18.5</p>
+          <p style={{ margin: '6px 0 0 0' }}>Normal weight: BMI 18.5 - 24.9</p>
+          <p style={{ margin: '6px 0 0 0' }}>Overweight: BMI 25.0 - 29.9</p>
+          <p style={{ margin: '6px 0 0 0' }}>Obese: BMI ≥ 30.0</p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '25px' }}>
-          <button
-            className="btn"
-            onClick={() => navigate('/bmi')}
-            style={{ background: '#6c757d' }}
-          >
+        <div className="actions">
+          <button className="btn secondary" onClick={() => navigate('/bmi')}>
             Calculate Again
           </button>
-          <button
-            className="btn"
-            onClick={() => navigate('/weather')}
-            style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}
-          >
+          <button className="btn" onClick={() => navigate('/prakriti')}>
             Next
           </button>
         </div>

@@ -25,6 +25,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/bmi', require('./routes/bmiRoutes'));
 app.use('/api/weather', require('./routes/weatherRoutes'));
 app.use("/api/prakriti", prakritiRoutes);
+app.use('/api/ritucharya', require('./routes/ritucharyaRoutes'));
 // Basic route
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to Ritucharya API' });

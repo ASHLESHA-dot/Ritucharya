@@ -184,25 +184,32 @@ function WeatherPage({ token, handleLogout }) {
           </div>
           <p className="weather-description">{weatherData.description}</p>
           {weatherData.icon === 'manual' && (
-            <p style={{ fontSize: '12px', fontStyle: 'italic', marginTop: '10px', opacity: 0.8, color: '#ffffff' }}>
+            <p style={{ fontSize: 12, fontStyle: 'italic', marginTop: 10, opacity: 0.8, color: 'rgba(31,41,55,0.75)' }}>
               Manually entered weather data
             </p>
           )}
 
-          <button
-            className="btn"
-            onClick={() => navigate('/bmi-results', { replace: true })}
-            style={{ marginTop: '25px', background: '#6c757d' }}
-          >
-            ← Back to BMI
-          </button>
+          <div className="actions">
+            <button
+              className="btn accent"
+              onClick={() => navigate('/ritucharya', { replace: true })}
+            >
+              View Personalized Ritucharya →
+            </button>
+            <button
+              className="btn secondary"
+              onClick={() => navigate('/prakriti', { replace: true })}
+            >
+              ← Back
+            </button>
+          </div>
         </div>
       )}
 
       {locationError && !weatherData && !weatherLoading && manualWeatherForm && (
         <div className="weather-card">
           <h2>Enter Weather Details</h2>
-          <p style={{ color: '#ffffff', fontSize: '14px', marginBottom: '15px' }}>
+          <p style={{ color: 'rgba(31,41,55,0.78)', fontSize: 14, marginBottom: 15 }}>
             {locationError}
           </p>
           <form onSubmit={handleManualWeatherSubmit} className="manual-weather-form">
