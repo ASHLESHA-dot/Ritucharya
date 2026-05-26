@@ -9,17 +9,14 @@ import traceback
 app = Flask(__name__)
 CORS(app)
 
-# Load model
+# Load model and encoder
 model = joblib.load('model.pkl')
+encoder = joblib.load('encoder.pkl')
 
-# Load and prepare dataset
+# Load and prepare dataset to get feature info
 df = pd.read_csv('Dataset.csv')
 X = df.drop('Dosha', axis=1)
 y = df['Dosha']
-
-# Create and fit OneHotEncoder
-encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
-encoder.fit(X)
 
 categorical_features = X.columns.tolist()
 feature_mapping = {feature: X[feature].unique().tolist() for feature in categorical_features}
@@ -94,18 +91,18 @@ def predict():
             prakriti_type = "Dual"
         else:
             # All three doshas balanced
-            prakriti = "Tri-dosha"
-            prakriti_type = "Triple"
+            prakriti = "Vata-Pitta-Kapha"
+            prakriti_type = "Tri-Dosha"
 
-        # All 7 combinations with percentages
+        # All 7 combinations with percentages (matching backend JSON file names)
         combinations = [
             {'name': 'Vata', 'percentage': round(v_score * 100, 1)},
             {'name': 'Pitta', 'percentage': round(p_score * 100, 1)},
             {'name': 'Kapha', 'percentage': round(k_score * 100, 1)},
             {'name': 'Vata-Pitta', 'percentage': round((v_score + p_score) * 100 / 2, 1)},
-            {'name': 'Vata-Kapha', 'percentage': round((v_score + k_score) * 100 / 2, 1)},
+            {'name': 'Kapha-Vata', 'percentage': round((v_score + k_score) * 100 / 2, 1)},
             {'name': 'Pitta-Kapha', 'percentage': round((p_score + k_score) * 100 / 2, 1)},
-            {'name': 'Tri-dosha', 'percentage': round((v_score + p_score + k_score) * 100 / 3, 1)},
+            {'name': 'Vata-Pitta-Kapha', 'percentage': round((v_score + p_score + k_score) * 100 / 3, 1)},
         ]
 
         result = {
@@ -144,4 +141,4 @@ def health():
     }), 200
 
 if __name__ == '__main__':
-    app.run(debug=False, port=5000, host='127.0.0.1')
+    app.run(debug=False, port=5001, host='127.0.0.1')

@@ -24,9 +24,13 @@ const verifyToken = (req, res, next) => {
 // Calculate and save BMI
 router.post('/calculate', verifyToken, async (req, res) => {
   try {
+    console.log('BMI Calculate request from user:', req.userId);
+    console.log('Request body:', req.body);
+    
     const { weight, height, age, gender } = req.body;
 
     if (!weight || !height || !age || !gender) {
+      console.log('Missing fields - weight:', weight, 'height:', height, 'age:', age, 'gender:', gender);
       return res.status(400).json({ message: 'All fields are required' });
     }
 
@@ -47,12 +51,19 @@ router.post('/calculate', verifyToken, async (req, res) => {
     }
 
     // Update user with BMI data
+    console.log('Updating user:', req.userId);
     const user = await User.findByIdAndUpdate(
       req.userId,
       { weight, height, age, gender, bmi, bmiCategory },
       { new: true }
     );
 
+    if (!user) {
+      console.log('User not found:', req.userId);
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    console.log('BMI calculated successfully:', bmi);
     res.status(200).json({
       message: 'BMI calculated successfully',
       bmi,
@@ -70,7 +81,8 @@ router.post('/calculate', verifyToken, async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(500).json({ message: 'Error calculating BMI', error: error.message });
+    console.error('BMI Calculate Error:', error);
+    res.status(500).json({ message: 'Error calculating BMI', error: error.message, stack: error.stack });
   }
 });
 

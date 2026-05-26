@@ -1,0 +1,201 @@
+Sample_ID,Actual_Dosha,Predicted_Dosha,Confidence,Correct,Q1,Q2
+1,Vata,Vata,0.6176269841269842,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+2,Pitta,Pitta,0.8312698412698413,True,Medium (मध्यम),Moderate (मध्यम)
+3,Vata,Vata,0.4699967532467532,True,Large/Heavy (भारी),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+4,Pitta,Pitta,0.5113037240537242,True,Medium (मध्यम),Moderate (मध्यम)
+5,Pitta-Vata,Pitta-Vata,0.46750974025974024,True,Slim (दुबला-पतला),Moderate (मध्यम)
+6,Kapha-Pitta,Kapha-Pitta,0.4686222943722943,True,Medium (मध्यम),Moderate (मध्यम)
+7,Kapha,Kapha,0.4953863636363638,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+8,Pitta,Pitta,0.7053531746031745,True,Medium (मध्यम),Moderate (मध्यम)
+9,Pitta-Vata,Pitta-Vata,0.537626984126984,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+10,Pitta,Pitta,0.7571488511488511,True,Medium (मध्यम),Moderate (मध्यम)
+11,Pitta,Pitta,0.625765873015873,True,Medium (मध्यम),Moderate (मध्यम)
+12,Pitta,Pitta,0.7311944444444444,True,Medium (मध्यम),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+13,Pitta-Vata,Pitta-Vata,0.5465674603174605,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+14,Pitta-Vata,Pitta-Vata,0.5527290764790763,True,Medium (मध्यम),Moderate (मध्यम)
+15,Kapha-Pitta,Kapha-Pitta,0.5573437118437117,True,Medium (मध्यम),Moderate (मध्यम)
+16,Pitta-Vata,Pitta-Vata,0.46140548340548354,True,Medium (मध्यम),Moderate (मध्यम)
+17,Kapha,Kapha,0.3496309523809522,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+18,Pitta,Pitta,0.9366547619047618,True,Medium (मध्यम),Moderate (मध्यम)
+19,Pitta,Pitta,0.7839642857142859,True,Medium (मध्यम),Moderate (मध्यम)
+20,Pitta-Vata,Pitta-Vata,0.46449314574314576,True,Slim (दुबला-पतला),Moderate (मध्यम)
+21,Pitta-Vata,Pitta-Vata,0.5528318903318903,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+22,Pitta-Vata,Pitta-Vata,0.440547619047619,True,Slim (दुबला-पतला),Moderate (मध्यम)
+23,Pitta,Pitta,0.9796428571428573,True,Medium (मध्यम),Moderate (मध्यम)
+24,Pitta,Pitta,0.500247113997114,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+25,Kapha-Pitta,Kapha-Pitta,0.5203849206349205,True,Large/Heavy (भारी),Moderate (मध्यम)
+26,Pitta,Pitta,0.7774404761904761,True,Medium (मध्यम),Moderate (मध्यम)
+27,Kapha-Pitta,Kapha-Pitta,0.535031746031746,True,Medium (मध्यम),Moderate (मध्यम)
+28,Pitta,Pitta,0.6425822510822512,True,Slim (दुबला-पतला),Moderate (मध्यम)
+29,Pitta,Pitta,0.9506666666666667,True,Medium (मध्यम),Moderate (मध्यम)
+30,Kapha-Pitta,Kapha-Pitta,0.5468371905871906,True,Medium (मध्यम),Moderate (मध्यम)
+31,Kapha-Vata,Pitta,0.3121136363636362,False,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+32,Pitta,Pitta,0.82447152194211,True,Medium (मध्यम),Moderate (मध्यम)
+33,Pitta,Pitta,0.7743412698412696,True,Medium (मध्यम),Moderate (मध्यम)
+34,Pitta,Pitta,0.7172810245310244,True,Large/Heavy (भारी),Moderate (मध्यम)
+35,Pitta,Pitta,0.47260064935064916,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+36,Pitta,Pitta,0.46916666666666673,True,Medium (मध्यम),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+37,Pitta,Pitta,0.8372142857142858,True,Medium (मध्यम),Moderate (मध्यम)
+38,Kapha-Pitta,Kapha-Pitta,0.49033730158730165,True,Medium (मध्यम),Moderate (मध्यम)
+39,Kapha-Pitta,Kapha-Pitta,0.5262738095238094,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+40,Kapha-Pitta,Kapha-Pitta,0.5209047619047619,True,Slim (दुबला-पतला),Moderate (मध्यम)
+41,Pitta-Vata,Pitta-Vata,0.4877738095238096,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+42,Vata,Vata,0.6536031746031745,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+43,Kapha-Pitta,Kapha-Pitta,0.47517740429505134,True,Medium (मध्यम),Moderate (मध्यम)
+44,Pitta-Vata,Pitta-Vata,0.47351587301587317,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+45,Vata,Vata,0.49211111111111117,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+46,Pitta-Vata,Pitta-Vata,0.5530833333333333,True,Medium (मध्यम),Moderate (मध्यम)
+47,Kapha,Kapha,0.41103361344537825,True,Medium (मध्यम),Moderate (मध्यम)
+48,Pitta,Pitta,0.7755456977662861,True,Medium (मध्यम),Moderate (मध्यम)
+49,Vata,Vata,0.41420238095238093,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+50,Pitta-Vata,Pitta-Vata,0.4725119047619046,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+51,Kapha-Pitta,Kapha-Pitta,0.5809707792207791,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+52,Pitta-Vata,Pitta-Vata,0.340345238095238,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+53,Pitta-Vata,Pitta-Vata,0.40617279942279944,True,Slim (दुबला-पतला),Moderate (मध्यम)
+54,Vata,Vata,0.29884920634920636,True,Medium (मध्यम),Moderate (मध्यम)
+55,Kapha-Pitta,Kapha-Pitta,0.39224053724053726,True,Medium (मध्यम),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+56,Pitta,Pitta,0.7773290043290043,True,Medium (मध्यम),Moderate (मध्यम)
+57,Pitta,Pitta,0.7151507936507936,True,Medium (मध्यम),Moderate (मध्यम)
+58,Kapha-Pitta,Kapha-Pitta,0.4763730158730157,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+59,Pitta,Pitta,0.6217420634920634,True,Medium (मध्यम),Moderate (मध्यम)
+60,Pitta,Pitta,0.7031612766318651,True,Medium (मध्यम),Moderate (मध्यम)
+61,Kapha-Pitta,Kapha-Pitta,0.5924428071928073,True,Medium (मध्यम),Moderate (मध्यम)
+62,Pitta,Pitta,0.8017016806722688,True,Medium (मध्यम),Moderate (मध्यम)
+63,Pitta,Pitta,0.8467896825396827,True,Slim (दुबला-पतला),Moderate (मध्यम)
+64,Pitta,Pitta,0.8726042568542567,True,Medium (मध्यम),Moderate (मध्यम)
+65,Pitta,Pitta,0.7078207282913165,True,Medium (मध्यम),Moderate (मध्यम)
+66,Kapha,Kapha,0.5096535409035409,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+67,Kapha,Kapha-Pitta,0.41723556998556993,False,Medium (मध्यम),Moderate (मध्यम)
+68,Kapha-Pitta,Kapha-Pitta,0.5627976190476189,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+69,Pitta,Pitta,0.7837658730158731,True,Medium (मध्यम),Moderate (मध्यम)
+70,Kapha-Vata,Kapha-Vata,0.25625,True,Slim (दुबला-पतला),Moderate (मध्यम)
+71,Pitta,Pitta,0.6878253968253968,True,Medium (मध्यम),Moderate (मध्यम)
+72,Pitta,Pitta,0.9222142857142858,True,Medium (मध्यम),Moderate (मध्यम)
+73,Kapha-Pitta,Kapha-Pitta,0.5612738095238096,True,Medium (मध्यम),Moderate (मध्यम)
+74,Kapha-Pitta,Kapha-Pitta,0.581573482073482,True,Medium (मध्यम),Moderate (मध्यम)
+75,Pitta,Pitta,0.919219696969697,True,Medium (मध्यम),Moderate (मध्यम)
+76,Kapha,Kapha,0.424154761904762,True,Slim (दुबला-पतला),Moderate (मध्यम)
+77,Pitta,Pitta,0.6254960317460317,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+78,Pitta,Pitta,0.6528571428571429,True,Medium (मध्यम),Moderate (मध्यम)
+79,Kapha-Pitta,Kapha-Pitta,0.5076071428571428,True,Medium (मध्यम),Moderate (मध्यम)
+80,Vata,Vata,0.5798214285714286,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+81,Vata,Vata,0.4686666666666667,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+82,Pitta,Pitta,0.9347619047619048,True,Medium (मध्यम),Moderate (मध्यम)
+83,Pitta,Pitta,0.7507380952380953,True,Medium (मध्यम),Moderate (मध्यम)
+84,Pitta,Pitta,0.6105234487734491,True,Slim (दुबला-पतला),Moderate (मध्यम)
+85,Pitta,Pitta,0.4829729437229435,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+86,Pitta,Pitta,0.7312103174603175,True,Medium (मध्यम),Moderate (मध्यम)
+87,Kapha-Pitta,Kapha-Pitta,0.5174331501831502,True,Medium (मध्यम),Moderate (मध्यम)
+88,Vata,Vata,0.6079880952380953,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+89,Kapha-Pitta,Kapha-Pitta,0.4721349206349207,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+90,Pitta-Vata,Pitta-Vata,0.5096738816738816,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+91,Pitta-Vata,Pitta-Vata,0.4898690476190477,True,Medium (मध्यम),Moderate (मध्यम)
+92,Vata,Vata,0.45384126984127,True,Slim (दुबला-पतला),Moderate (मध्यम)
+93,Pitta,Pitta,0.7180357142857141,True,Medium (मध्यम),Moderate (मध्यम)
+94,Pitta,Pitta,0.7920853803059685,True,Medium (मध्यम),Moderate (मध्यम)
+95,Pitta-Vata,Pitta-Vata,0.4196580086580085,True,Slim (दुबला-पतला),Moderate (मध्यम)
+96,Pitta-Vata,Pitta-Vata,0.5019343434343433,True,Slim (दुबला-पतला),Moderate (मध्यम)
+97,Kapha-Pitta,Kapha-Pitta,0.47165206851971564,True,Medium (मध्यम),Moderate (मध्यम)
+98,Pitta,Pitta,0.7052460317460317,True,Medium (मध्यम),Moderate (मध्यम)
+99,Pitta,Pitta,0.8146388888888889,True,Medium (मध्यम),Moderate (मध्यम)
+100,Pitta,Pitta,0.9437575757575758,True,Medium (मध्यम),Moderate (मध्यम)
+101,Kapha-Pitta,Kapha-Pitta,0.5113751803751804,True,Medium (मध्यम),Moderate (मध्यम)
+102,Kapha,Kapha,0.49792857142857144,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+103,Pitta,Pitta,0.7216309523809522,True,Medium (मध्यम),Moderate (मध्यम)
+104,Pitta,Pitta,0.7353127705627707,True,Slim (दुबला-पतला),Moderate (मध्यम)
+105,Kapha-Pitta,Kapha-Pitta,0.5075119047619046,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+106,Pitta,Pitta,0.8555371572871574,True,Medium (मध्यम),Moderate (मध्यम)
+107,Kapha-Pitta,Kapha-Pitta,0.5015183982683982,True,Medium (मध्यम),Moderate (मध्यम)
+108,Pitta,Pitta,0.9721666666666667,True,Large/Heavy (भारी),Moderate (मध्यम)
+109,Pitta,Pitta,0.6060000000000001,True,Large/Heavy (भारी),Moderate (मध्यम)
+110,Kapha,Kapha,0.3301666666666666,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+111,Pitta,Pitta,0.7280223877429758,True,Medium (मध्यम),Moderate (मध्यम)
+112,Pitta,Pitta,0.878876984126984,True,Medium (मध्यम),Moderate (मध्यम)
+113,Kapha-Pitta,Kapha-Pitta,0.488514705882353,True,Slim (दुबला-पतला),Moderate (मध्यम)
+114,Pitta,Pitta,0.8326829004329004,True,Medium (मध्यम),Moderate (मध्यम)
+115,Pitta,Pitta,0.5507067099567099,True,Slim (दुबला-पतला),Moderate (मध्यम)
+116,Pitta,Pitta,0.6286547619047619,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+117,Pitta,Pitta,0.7851984126984126,True,Slim (दुबला-पतला),Moderate (मध्यम)
+118,Pitta-Vata,Pitta-Vata,0.44742063492063494,True,Medium (मध्यम),Moderate (मध्यम)
+119,Pitta-Vata,Pitta-Vata,0.4197460317460318,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+120,Kapha-Pitta,Kapha-Pitta,0.5679935064935064,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+121,Pitta,Pitta,0.7747665945165946,True,Slim (दुबला-पतला),Moderate (मध्यम)
+122,Kapha-Pitta,Kapha-Pitta,0.5352085137085136,True,Medium (मध्यम),Moderate (मध्यम)
+123,Kapha,Kapha,0.46340476190476193,True,Medium (मध्यम),Moderate (मध्यम)
+124,Pitta,Pitta,0.7616468253968255,True,Slim (दुबला-पतला),Moderate (मध्यम)
+125,Kapha-Pitta,Kapha-Pitta,0.43212698412698425,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+126,Pitta,Pitta,0.5826060606060607,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+127,Pitta,Pitta,0.6004393939393937,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+128,Pitta-Vata,Pitta-Vata,0.5753968253968255,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+129,Kapha-Pitta,Kapha-Pitta,0.49285994397759103,True,Medium (मध्यम),Moderate (मध्यम)
+130,Pitta,Pitta,0.7293088235294117,True,Slim (दुबला-पतला),Moderate (मध्यम)
+131,Pitta,Pitta,0.6687175536881419,True,Medium (मध्यम),Moderate (मध्यम)
+132,Kapha-Vata,Kapha-Vata,0.25118686868686857,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+133,Pitta,Pitta,0.7097276334776335,True,Medium (मध्यम),Moderate (मध्यम)
+134,Vata,Pitta,0.3462936507936508,False,Medium (मध्यम),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+135,Pitta,Pitta,0.7889812409812409,True,Medium (मध्यम),Moderate (मध्यम)
+136,Kapha-Pitta,Kapha-Pitta,0.4565205627705629,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+137,Pitta,Pitta,0.97,True,Medium (मध्यम),Moderate (मध्यम)
+138,Pitta,Pitta,0.7945925953131837,True,Medium (मध्यम),Moderate (मध्यम)
+139,Pitta-Vata,Pitta-Vata,0.4234145021645022,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+140,Pitta,Pitta,0.6193604108309991,True,Medium (मध्यम),Moderate (मध्यम)
+141,Pitta,Pitta,0.6857435064935065,True,Slim (दुबला-पतला),Moderate (मध्यम)
+142,Vata,Vata,0.5137261904761905,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+143,Kapha-Pitta,Kapha-Pitta,0.5586117216117216,True,Medium (मध्यम),Moderate (मध्यम)
+144,Kapha,Kapha,0.4690753968253968,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+145,Pitta,Pitta,0.6147135642135642,True,Medium (मध्यम),Moderate (मध्यम)
+146,Kapha,Kapha,0.5838943001443,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+147,Kapha-Pitta,Kapha-Pitta,0.5435562770562771,True,Medium (मध्यम),Moderate (मध्यम)
+148,Pitta,Pitta,0.6240155334861217,True,Medium (मध्यम),Moderate (मध्यम)
+149,Kapha-Pitta,Kapha-Pitta,0.5400992063492063,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+150,Pitta,Pitta,0.8668353803059684,True,Medium (मध्यम),Moderate (मध्यम)
+151,Pitta-Vata,Pitta-Vata,0.44589682539682557,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+152,Pitta,Pitta,0.6876226551226553,True,Medium (मध्यम),Moderate (मध्यम)
+153,Kapha-Pitta,Kapha-Pitta,0.5545858585858586,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+154,Pitta,Pitta-Vata,0.3318492063492063,False,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+155,Kapha-Pitta,Kapha-Pitta,0.61216872016872,True,Medium (मध्यम),Moderate (मध्यम)
+156,Pitta,Pitta,0.8406666666666668,True,Slim (दुबला-पतला),Moderate (मध्यम)
+157,Pitta,Pitta,0.5484761904761907,True,Slim (दुबला-पतला),Moderate (मध्यम)
+158,Pitta,Pitta,0.8012261904761906,True,Medium (मध्यम),Moderate (मध्यम)
+159,Pitta,Pitta,0.5072817460317459,True,Medium (मध्यम),Moderate (मध्यम)
+160,Kapha-Pitta,Kapha-Pitta,0.5364666167166168,True,Medium (मध्यम),Moderate (मध्यम)
+161,Vata,Vata,0.7404960317460317,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+162,Kapha-Pitta,Kapha-Pitta,0.5554385614385615,True,Medium (मध्यम),Moderate (मध्यम)
+163,Pitta,Pitta,0.9275000000000003,True,Medium (मध्यम),Moderate (मध्यम)
+164,Kapha-Pitta,Kapha-Pitta,0.6086396103896102,True,Medium (मध्यम),Moderate (मध्यम)
+165,Pitta-Vata,Pitta-Vata,0.548813492063492,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+166,Pitta,Pitta,0.939154761904762,True,Medium (मध्यम),Moderate (मध्यम)
+167,Pitta,Pitta,0.7265725108225108,True,Medium (मध्यम),Moderate (मध्यम)
+168,Pitta,Pitta,0.8620952380952382,True,Medium (मध्यम),Moderate (मध्यम)
+169,Pitta,Pitta,0.7584300144300146,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+170,Pitta,Pitta,0.8800317460317462,True,Medium (मध्यम),Moderate (मध्यम)
+171,Kapha-Pitta,Kapha-Pitta,0.47525793650793635,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+172,Kapha-Pitta,Kapha-Pitta,0.5370030525030525,True,Medium (मध्यम),Moderate (मध्यम)
+173,Kapha-Vata,Pitta-Vata,0.271025974025974,False,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+174,Pitta,Pitta,0.8389761904761904,True,Medium (मध्यम),Moderate (मध्यम)
+175,Kapha-Pitta,Kapha-Pitta,0.5828712121212122,True,Medium (मध्यम),Moderate (मध्यम)
+176,Kapha-Pitta,Kapha-Pitta,0.5723293650793648,True,Medium (मध्यम),Moderate (मध्यम)
+177,Kapha-Pitta,Pitta,0.4406525974025975,False,Medium (मध्यम),Moderate (मध्यम)
+178,Pitta-Vata,Pitta-Vata,0.4342265512265513,True,Slim (दुबला-पतला),Moderate (मध्यम)
+179,Pitta,Pitta,0.7610396825396825,True,Medium (मध्यम),Moderate (मध्यम)
+180,Pitta,Pitta,0.7269603174603175,True,Medium (मध्यम),Moderate (मध्यम)
+181,Pitta,Pitta,0.7649451659451662,True,Medium (मध्यम),Moderate (मध्यम)
+182,Kapha-Pitta,Kapha-Pitta,0.5201230158730161,True,Slim (दुबला-पतला),Moderate (मध्यम)
+183,Pitta,Pitta,0.9023506493506495,True,Slim (दुबला-पतला),Moderate (मध्यम)
+184,Pitta,Pitta,0.8237128427128426,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+185,Pitta-Vata,Pitta-Vata,0.5123239538239538,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+186,Pitta,Pitta,0.8301309523809526,True,Medium (मध्यम),Moderate (मध्यम)
+187,Pitta,Pitta,0.6708650793650794,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+188,Kapha,Kapha-Pitta,0.517853896103896,False,Medium (मध्यम),Moderate (मध्यम)
+189,Pitta,Pitta,0.8000079365079366,True,Medium (मध्यम),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+190,Pitta,Pitta,0.9009206349206348,True,Slim (दुबला-पतला),Moderate (मध्यम)
+191,Vata,Vata,0.46284523809523814,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"
+192,Pitta,Pitta,0.8624642857142857,True,Medium (मध्यम),Moderate (मध्यम)
+193,Kapha,Kapha,0.4548823953823954,True,Large/Heavy (भारी),"Heavy, difficult to lose (भारी, कम करना मुश्किल)"
+194,Pitta,Pitta,0.7896349206349207,True,Medium (मध्यम),Moderate (मध्यम)
+195,Kapha-Pitta,Kapha-Pitta,0.6617063492063491,True,Medium (मध्यम),Moderate (मध्यम)
+196,Pitta,Pitta,0.8361226551226553,True,Medium (मध्यम),Moderate (मध्यम)
+197,Pitta-Vata,Pitta,0.41423809523809524,False,Medium (मध्यम),Moderate (मध्यम)
+198,Pitta,Pitta,0.6496978021978024,True,Slim (दुबला-पतला),Moderate (मध्यम)
+199,Kapha,Kapha-Pitta,0.4166337535014006,False,Medium (मध्यम),Moderate (मध्यम)
+200,Pitta,Pitta,0.6458939393939395,True,Slim (दुबला-पतला),"Low, difficult to gain (कम, बढ़ाना मुश्किल)"

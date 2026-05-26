@@ -1,0 +1,231 @@
+[
+  {
+    "prakriti": "Vata",
+    "season": "Hemanta",
+    "season_role": "neutral || PACIFYING",
+    "weather_characteristics": [
+      "early winter",
+      "restorative coolness",
+      "nourishing environmental conditions"
+    ],
+    "recommendations": {
+      "diet": [
+        "unctuous, acidic, and salty food items",
+        "dairy and its preparations",
+        "cane juice",
+        "black lentil",
+        "warm drinking water"
+      ],
+      "lifestyle": [
+        "daily oil massage (Abhyanga)",
+        "use of aguru lepa",
+        "carrying damp, heavy clothes for warmth"
+      ],
+      "avoid": [
+        "foods that are laghu (light) and ruksha (dry)",
+        "exposure to strong winds"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Vata-dominant individuals benefit maximally from these warm, heavy routines to counter their inherent cold and light nature."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "19",
+      "44",
+      "45",
+      "50"
+    ]
+  },
+  {
+    "prakriti": "Vata",
+    "season": "Shishira",
+    "season_role": "mild aggravating",
+    "weather_characteristics": [
+      "extreme winter",
+      "cold",
+      "dryness"
+    ],
+    "recommendations": {
+      "diet": [
+        "follow Hemanta regimen (dairy, cane juice, fats)",
+        "warm, cooked, nourishing foods"
+      ],
+      "lifestyle": [
+        "daily warm oil massage",
+        "staying in warm, wind-protected areas"
+      ],
+      "avoid": [
+        "pungent and bitter tastes",
+        "vata-stimulating foods and beverages",
+        "exposure to cold winds"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of opposites",
+      "dosha_effect": "Provides warm and nourishing qualities that balance Vata and prevent aggravation during the cold season."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "46",
+      "50",
+      "83"
+    ]
+  },
+  {
+    "prakriti": "Vata",
+    "season": "Vasanta",
+    "season_role": "neutral",
+    "weather_characteristics": [
+      "spring",
+      "environmental heat melting accumulated Kapha"
+    ],
+    "recommendations": {
+      "diet": [
+         "Yava (barley) for light digestion",
+    "Godhuma (wheat) as a nourishing grain"
+      ],
+      "lifestyle": [
+        "gentle exercise",
+        "moderate oil application to maintain skin suppleness"
+      ],
+      "avoid": [
+        "daytime sleeping",
+        "excessively heavy and cold foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "derived from seasonal qualities",
+      "dosha_effect": "Vasanta's Kapha prakopa calls for light, dry grains seasonally; Vata prakriti individuals should prioritize Yava while supplementing with Godhuma to prevent depletion from excessive dryness."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "46",
+      "47",
+      "51",
+      "86"
+    ]
+  },
+  {
+    "prakriti": "Vata",
+    "season": "Grishma",
+    "season_role": "accumulation",
+    "weather_characteristics": [
+      "intense heat",
+      "intense dryness"
+    ],
+    "vulnerable_condition": "feelings of depletion",
+    "recommendations": {
+      "diet": [
+        "sweet, cold, and unctuous (snigdha) foods",
+        "ghee and milk with rice",
+        "leaf mantha with jaggery"
+      ],
+      "lifestyle": [
+        "staying in cool locations",
+        "wearing light, soft clothing"
+      ],
+      "avoid": [
+        "staying up at night",
+        "excessive exercise",
+        "excessive sexual activity",
+        "alcohol (if taken,heavily diluted with water)"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Environmental dryness causes Vata to accumulate; unctuous diet and reduced activity prevent depletion."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "19",
+      "47",
+      "51",
+      "79",
+      "83"
+    ]
+  },
+  {
+    "prakriti": "Vata",
+    "season": "Varsha",
+    "season_role": "aggravation",
+    "weather_characteristics": [
+      "cold",
+      "windy",
+      "damp",
+      "erratic weather"
+    ],
+    "vulnerable_condition": "Vata aggravation",
+    "recommendations": {
+      "diet": [
+        "warm, cooked, and slightly oily foods",
+        "sweet, sour, and salty tastes",
+        "honey added to meals"
+      ],
+      "lifestyle": [
+        "strict daily routine",
+        "warm oil massage (Abhyanga) using sesame oil",
+        "grounding exercises (slow Yoga/walking)",
+        "avoid walking barefoot and exposure to rain and cold winds",
+        "travel by covered conveyance (avarana yana) — classical instruction to avoid direct wind and rain exposure during commute"
+      ],
+      "avoid": [
+        "raw salads",
+        "cold drinks",
+        "dry snacks (popcorn/crackers)",
+        "excessive fasting and over-exertion",
+        "exposure to rain and cold winds"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of similarity and dissimilarity",
+      "dosha_effect": "Warm, oily, and grounding qualities directly counter the peak aggravation of dry, cold Vata during the monsoon."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "54",
+      "55",
+      "56",
+      "79",
+      "83"
+    ]
+  },
+  {
+    "prakriti": "Vata",
+    "season": "Sharad",
+    "season_role": "pacification",
+    "weather_characteristics": [
+      "returning warmth",
+      "sudden intense sun exposure"
+    ],
+    "recommendations": {
+      "diet": [
+        "sweet and salty foods (to continue balancing Vata)",
+        "easily digestible grains like rice",
+        "honey"
+      ],
+      "lifestyle": [
+        "moonlight walking (cooling)",
+        "detoxification procedures if needed"
+      ],
+      "avoid": [
+        "midday sun exposure",
+        "daytime sleeping",
+        "excessive bitter taste (which can aggravate Vata despite being seasonal for Pitta)"
+      ]
+    },
+    "reasoning": {
+      "principle": "derived from seasonal qualities",
+      "dosha_effect": "The returning warmth naturally pacifies Vata, but the Vata person must avoid the seasonal 'bitter' focus of Sharad if it causes dryness."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "49",
+      "56",
+      "57",
+      "79",
+      "84"
+    ]
+  }
+]

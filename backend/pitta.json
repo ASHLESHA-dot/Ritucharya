@@ -1,0 +1,233 @@
+[
+  {
+    "prakriti": "Pitta",
+    "season": "Hemanta",
+    "season_role": "pacification",
+    "weather_characteristics": [
+      "cold wind",
+      "visarga kaala (cooling influence)"
+    ],
+    "recommendations": {
+      "diet": [
+        "unctuous, sweet, sour, and salty foods",
+        "milk and dairy products",
+        "cane sugar products",
+        "old rice and warm water"
+      ],
+      "lifestyle": [
+        "daily oil massage (Abhyanga)",
+        "wearing thick, warm clothes",
+        "staying in warm, inner rooms"
+      ],
+      "avoid": [
+        "inadequate food quantity",
+        "exposure to strong cold winds",
+        "inherently light and vata-vitiating foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "The cooling weather naturally pacifies Pitta, while robust internal Agni allows for the heavy, nourishing diet required by the body's peak strength."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "93",
+      "95",
+      "97",
+      "112",
+      "113"
+    ]
+  },
+  {
+    "prakriti": "Pitta",
+    "season": "Shishira",
+    "season_role": "mildly pacifying",
+    "weather_characteristics": [
+      "extreme cold",
+      "strong dry winds",
+      "aadaan kaala (increasing dryness)"
+    ],
+    "recommendations": {
+      "diet": [
+        "follow Hemanta regimen with emphasis on sweet taste",
+        "wheat and gram flour items",
+        "dairy and fats to sustain strong Agni"
+      ],
+      "lifestyle": [
+        "warm oil massage and lukewarm baths",
+        "staying in wind-protected, warm houses"
+      ],
+      "avoid": [
+        "pungent tastes",
+        "fasting",
+        "exposure to cold breezes"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of opposites",
+      "dosha_effect": "The cold qualities of Shishira help keep Pitta relatively balanced, while sweet taste and moderate unctuous foods support the strong digestive fire and prevent excess dryness and Vata increase without significantly aggravating Pitta."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "81",
+      "82",
+      "83",
+      "114"
+    ]
+  },
+  {
+    "prakriti": "Pitta",
+    "season": "Vasanta",
+    "season_role": "neutral",
+    "weather_characteristics": [
+      "warming weather",
+      "liquefaction of accumulated Kapha"
+    ],
+    "recommendations": {
+      "diet": [
+        "easily digestible old wheat and barley",
+        "bitter and astringent tastes",
+        "honey added to water or food"
+      ],
+      "lifestyle": [
+        "regular physical exercise (Vyayama)",
+        "dry massage (Udvartana) with herbal powders",
+        "bathing with lukewarm water"
+      ],
+      "avoid": [
+        "heavy, oily, and cold foods",
+        "sour tastes",
+        "daytime sleeping"
+      ]
+    },
+    "reasoning": {
+      "principle": "conservative derivation",
+      "dosha_effect": "Pitta types favor bitter and astringent tastes to manage seasonal Kapha while simultaneously preventing early heat accumulation."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "84",
+      "85",
+      "118",
+      "120"
+    ]
+  },
+  {
+    "prakriti": "Pitta",
+    "season": "Grishma",
+    "season_role": "neutral",
+    "weather_characteristics": [
+      "intense heat",
+      "extreme dryness",
+      "dehydrating sun rays"
+    ],
+    "recommendations": {
+      "diet": [
+        "sweet, cold, liquid, and unctuous food",
+        "ghee and milk with rice",
+        "cooling fruit juices (mango, grape, pomegranate)",
+        "tender coconut water"
+      ],
+      "lifestyle": [
+        "resting in cool shelters",
+        "applying sandalwood (Chandana) paste",
+        "enjoying cool moonlight",
+        "wearing light, thin clothes"
+      ],
+      "avoid": [
+        "salty, sour, and pungent tastes",
+        "spicy and fermented foods (yogurt)",
+        "strenuous exercise and midday sun"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Intense environmental heat directly aggravates Pitta's internal fire; cooling and hydrating agents are strictly necessary to maintain equilibrium."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "87",
+      "88",
+      "109",
+      "118",
+      "119"
+    ]
+  },
+  {
+    "prakriti": "Pitta",
+    "season": "Varsha",
+    "season_role": "accumulation",
+    "weather_characteristics": [
+      "cold and windy",
+      "humidity and dampness",
+      "acidic transformation of water"
+    ],
+    "recommendations": {
+      "diet": [
+        "warm, light, and freshly cooked meals",
+        "old barley, wheat, and shali rice",
+        "small amounts of honey to counteract dampness"
+      ],
+      "lifestyle": [
+        "residing in non-humid locations",
+        "maintaining skin hygiene with herbal powder baths",
+        "gentle oil massage"
+      ],
+      "avoid": [
+        "excessive sour and salty foods",
+        "heavy, oily, and raw foods",
+        "river water and daytime sleep"
+      ]
+    },
+    "reasoning": {
+      "principle": "conservative derivation",
+      "dosha_effect": "Weak digestive fire and seasonal dampness can disturb digestion and gradually promote Pitta accumulation; light, warm, easily digestible foods help maintain Agni while avoiding excess Pitta aggravation."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "90",
+      "91",
+      "112",
+      "113"
+    ]
+  },
+  {
+    "prakriti": "Pitta",
+    "season": "Sharad",
+    "season_role": "aggravation",
+    "weather_characteristics": [
+      "sudden intense sun exposure",
+      "returning heat after rains"
+    ],
+    "recommendations": {
+      "diet": [
+        "sweet, light, cold, and slightly bitter foods",
+        "Tikta Ghee (bitter medicated ghee)",
+        "milk, sugar, and sugarcane products",
+        "Hamsodaka (water purified by daytime sun rays, nighttime moonlight, and the rise of Agastya star — rendering it non-abhishyandi, non-ruksha, and Dosha-mitigating)"
+      ],
+      "lifestyle": [
+        "exposure to moon rays in early night",
+        "wearing seasonal flower garlands",
+        "purgation (Virechana) to clear excess Pitta"
+      ],
+      "avoid": [
+        "hot, sharp, and spicy foods",
+        "curd, muscle fats, and oils",
+        "alkaline preparations and midday sun"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of opposites",
+      "dosha_effect": "Sudden heat causes peak Pitta aggravation (Prakopa); bitter and sweet cooling agents directly counteract the internal fire and sharp qualities."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "93",
+      "94",
+      "109",
+      "112",
+      "118"
+    ]
+  }
+]

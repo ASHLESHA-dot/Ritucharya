@@ -10,27 +10,61 @@ function PrakritiPage({ token, handleLogout }) {
   const [prakritiResult, setPrakritiResult] = useState(null);
   const [features, setFeatures] = useState({});
 
-  // Form answers - all 18 attributes
+  // Form answers - all 24 questions
   const [answers, setAnswers] = useState({
-    'Body Size': '',
-    'Body Weight': '',
-    'Eyes': '',
-    'Nose': '',
-    'Lips': '',
-    'Teeth': '',
-    'Skin': '',
-    'Hair': '',
-    'Appetite': '',
-    'Digestion': '',
-    'Thirst': '',
-    'Emotions': '',
-    'Mind': '',
-    'Intellect': '',
-    'Speech': '',
-    'Voice': '',
-    'Dreams': '',
-    'Season Preferred': '',
+    'Q1': '',
+    'Q2': '',
+    'Q3': '',
+    'Q4': '',
+    'Q5': '',
+    'Q6': '',
+    'Q7': '',
+    'Q8': '',
+    'Q9': '',
+    'Q10': '',
+    'Q11': '',
+    'Q12': '',
+    'Q13': '',
+    'Q14': '',
+    'Q15': '',
+    'Q16': '',
+    'Q17': '',
+    'Q18': '',
+    'Q19': '',
+    'Q20': '',
+    'Q21': '',
+    'Q22': '',
+    'Q23': '',
+    'Q24': '',
   });
+
+  // Question labels with bilingual text
+  const questionLabels = {
+    'Q1': 'Body Size (शरीर का आकार)',
+    'Q2': 'Body Weight (शरीर का वज़न)',
+    'Q3': 'Height (लंबाई)',
+    'Q4': 'Bone Structure (हड्डियों की बनावट)',
+    'Q5': 'Complexion (त्वचा का रंग)',
+    'Q6': 'General Features (सामान्य विशेषताएँ)',
+    'Q7': 'Skin Texture (त्वचा की बनावट)',
+    'Q8': 'Hair Color (बालों का रंग)',
+    'Q9': 'Overall Appearance (संपूर्ण रूप)',
+    'Q10': 'Eyes Shape (आंखों का आकार)',
+    'Q11': 'Eyelashes (पलकों के बाल)',
+    'Q12': 'Blinking (आंख झपकना)',
+    'Q13': 'Cheeks (गाल)',
+    'Q14': 'Nose (नाक)',
+    'Q15': 'Teeth & Lips (दांत और होंठ)',
+    'Q16': 'Nails (नाखून)',
+    'Q17': 'Appetite (भूख)',
+    'Q18': 'Liking of Taste (पसंदीदा स्वाद)',
+    'Q19': 'Sleep (नींद)',
+    'Q20': 'Energy/Stamina (ऊर्जा/सहनशक्ति)',
+    'Q21': 'Sweating (पसीना)',
+    'Q22': 'Bowel Habits (मल त्याग)',
+    'Q23': 'Thirst (प्यास)',
+    'Q24': 'Mind/Temperament (मन/स्वभाव)',
+  };
 
   // Fetch available feature options on mount
   useEffect(() => {
@@ -149,24 +183,30 @@ function PrakritiPage({ token, handleLogout }) {
               onClick={() => {
                 setPrakritiResult(null);
                 setAnswers({
-                  'Body Size': '',
-                  'Body Weight': '',
-                  'Eyes': '',
-                  'Nose': '',
-                  'Lips': '',
-                  'Teeth': '',
-                  'Skin': '',
-                  'Hair': '',
-                  'Appetite': '',
-                  'Digestion': '',
-                  'Thirst': '',
-                  'Emotions': '',
-                  'Mind': '',
-                  'Intellect': '',
-                  'Speech': '',
-                  'Voice': '',
-                  'Dreams': '',
-                  'Season Preferred': '',
+                  'Q1': '',
+                  'Q2': '',
+                  'Q3': '',
+                  'Q4': '',
+                  'Q5': '',
+                  'Q6': '',
+                  'Q7': '',
+                  'Q8': '',
+                  'Q9': '',
+                  'Q10': '',
+                  'Q11': '',
+                  'Q12': '',
+                  'Q13': '',
+                  'Q14': '',
+                  'Q15': '',
+                  'Q16': '',
+                  'Q17': '',
+                  'Q18': '',
+                  'Q19': '',
+                  'Q20': '',
+                  'Q21': '',
+                  'Q22': '',
+                  'Q23': '',
+                  'Q24': '',
                 });
               }}
             >
@@ -205,7 +245,7 @@ function PrakritiPage({ token, handleLogout }) {
         <div className="two-col-form" style={{ marginTop: 16 }}>
           {Object.keys(answers).map(fieldName => (
             <div key={fieldName} className="form-group">
-              <label>{fieldName}</label>
+              <label>{questionLabels[fieldName] || fieldName}</label>
               <select
                 value={answers[fieldName]}
                 onChange={(e) => handleChange(fieldName, e.target.value)}

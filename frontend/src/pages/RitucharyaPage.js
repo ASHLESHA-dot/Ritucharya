@@ -98,13 +98,23 @@ function RitucharyaPage({ token, handleLogout }) {
           {title}
         </h3>
         <div className="recommendation-items">
-          {items.map((item, index) => (
-            <div className="recommendation-item" key={index}>
-              <div className="recommendation-title">{item.title}</div>
-              <div className="recommendation-description">{item.description}</div>
-              <div className="recommendation-reason">💡 {item.reason}</div>
-            </div>
-          ))}
+          {items.map((item, index) => {
+            // Handle both old format (with title, description, reason) and new format (string items)
+            if (typeof item === 'string') {
+              return (
+                <div className="recommendation-item" key={index}>
+                  <div className="recommendation-description">{item}</div>
+                </div>
+              );
+            }
+            return (
+              <div className="recommendation-item" key={index}>
+                <div className="recommendation-title">{item.title}</div>
+                <div className="recommendation-description">{item.description}</div>
+                <div className="recommendation-reason">💡 {item.reason}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
@@ -191,17 +201,29 @@ function RitucharyaPage({ token, handleLogout }) {
           {/* Reasoning Card */}
           <div className="weather-card" style={{ backgroundColor: '#f9f9f9' }}>
             <p style={{ fontSize: '14px', fontStyle: 'italic', color: '#555', margin: 0 }}>
-              ✨ {recommendations.reasoning}
+              ✨ {typeof recommendations.reasoning === 'object' 
+                ? `${recommendations.reasoning.principle} - ${recommendations.reasoning.dosha_effect}`
+                : recommendations.reasoning}
             </p>
           </div>
 
           {/* Recommendations Cards */}
           <div className="weather-card">
-            {renderRecommendationCategory('🌅 Morning Routine', recommendations.morningRoutine)}
-            {renderRecommendationCategory('🍲 Diet', recommendations.diet)}
-            {renderRecommendationCategory('🧘 Activities', recommendations.activities)}
-            {renderRecommendationCategory('😴 Sleep', recommendations.sleep)}
-            {renderRecommendationCategory('🌿 Lifestyle', recommendations.lifestyle)}
+            {recommendations.recommendations ? (
+              <>
+                {renderRecommendationCategory('🍲 Diet', recommendations.recommendations.diet)}
+                {renderRecommendationCategory('🌿 Lifestyle', recommendations.recommendations.lifestyle)}
+                {renderRecommendationCategory('⚠️ Avoid', recommendations.recommendations.avoid)}
+              </>
+            ) : (
+              <>
+                {renderRecommendationCategory('🌅 Morning Routine', recommendations.morningRoutine)}
+                {renderRecommendationCategory('🍲 Diet', recommendations.diet)}
+                {renderRecommendationCategory('🧘 Activities', recommendations.activities)}
+                {renderRecommendationCategory('😴 Sleep', recommendations.sleep)}
+                {renderRecommendationCategory('🌿 Lifestyle', recommendations.lifestyle)}
+              </>
+            )}
           </div>
 
           {/* Refresh & Navigation */}

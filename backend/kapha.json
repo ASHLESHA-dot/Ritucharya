@@ -1,0 +1,235 @@
+
+  [
+    {
+    "prakriti": "Kapha",
+    "season": "Hemanta",
+    "season_role": "accumulation",
+    "weather_characteristics": [
+      "cold wind",
+      "visarga kaala (cooling influence)"
+    ],
+    "recommendations": {
+      "diet": [
+        "unctuous, sour, and salty foods",
+        "warm drinking water",
+        "limited dairy and cane sugar preparations"
+      ],
+      "lifestyle": [
+        "daily oil massage (Abhyanga)",
+        "wearing thick, warm clothes",
+        "spending time in warm inner rooms"
+      ],
+      "avoid": [
+        "inadequate food quantity (to fuel strong Agni)",
+        "exposure to strong cold winds",
+        "excessive heavy and oily foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Kapha begins to accumulate due to environmental cold and heavy qualities; while the general winter regimen is heavy, Kapha types must take special care to not over-accumulate."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "19",
+      "96",
+      "98",
+      "114",
+      "116"
+    ]
+  },
+  {
+    "prakriti": "Kapha",
+    "season": "Shishira",
+    "season_role": "accumulation",
+    "weather_characteristics": [
+      "extreme cold",
+      "strong dry winds",
+      "increased environmental heavy qualities"
+    ],
+    "recommendations": {
+      "diet": [
+        "follow Hemanta regimen",
+        "ginger, garlic, and Pippali to stimulate Agni",
+        "warm, cooked grains like wheat"
+      ],
+      "lifestyle": [
+        "vigorous exercise (including wrestling) to generate heat",
+        "warm oil massage and lukewarm baths",
+        "staying in wind-protected houses"
+      ],
+      "avoid": [
+        "daytime sleep",
+        "cold and light foods",
+        "exposure to cold breezes"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of opposites",
+      "dosha_effect": "Initiates the accumulation (Sanchaya) of Kapha; vigorous activity and warming spices are required to prevent excessive stagnation."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "82",
+      "83",
+      "84",
+      "114",
+      "116"
+    ]
+  },
+  {
+    "prakriti": "Kapha",
+    "season": "Vasanta",
+    "season_role": "aggravation",
+    "weather_characteristics": [
+      "warming weather",
+      "liquefaction of accumulated Kapha"
+    ],
+    "recommendations": {
+      "diet": [
+        "warm, light, dry, and easily digestible foods",
+        "pungent (spicy), bitter, and astringent tastes",
+        "old wheat and barley",
+        "honey to clear mucus"
+      ],
+      "lifestyle": [
+        "vigorous physical exercise (Vyayama)",
+        "dry massage (Udvartana) with herbal powders",
+        "therapeutic emesis (Vamana) for purification",
+        "medicated smoking (Dhumapana) and gargling"
+      ],
+      "avoid": [
+        "daytime sleeping (strictly prohibited)",
+        "heavy dairy and excessive sweets",
+        "cold and deep-fried items",
+        "sour and unctuous foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Principle of opposites",
+      "dosha_effect": "Peak Kapha aggravation (Prakopa) occurs as heat melts stored coldness; light, dry, and active regimens are critical to counter congestion and lethargy."
+    },
+    "evidence_type": "direct",
+    "source": [
+      "85",
+      "87",
+      "111",
+      "121",
+      "122"
+    ]
+  },
+  {
+    "prakriti": "Kapha",
+    "season": "Grishma",
+    "season_role": "pacification",
+    "weather_characteristics": [
+      "intense heat",
+      "extreme dryness",
+      "dehydrating sun"
+    ],
+    "recommendations": {
+      "diet": [
+        "sweet, cold, and liquid foods",
+        "fresh fruit juices",
+        "ghee and milk with Shali rice"
+      ],
+      "lifestyle": [
+        "resting in cool shelters",
+        "wearing light, thin clothes",
+        "applying sandalwood paste"
+      ],
+      "avoid": [
+        "salty, sour, and pungent tastes",
+        "strenuous physical exercise",
+        "strong and undiluted alcohol"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "The intense environmental heat and dryness naturally dry up Kapha's moisture, leading to its pacification (Prashamana)."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "88",
+      "89",
+      "114",
+      "116"
+    ]
+  },
+  {
+    "prakriti": "Kapha",
+    "season": "Varsha",
+    "season_role": "neutral",
+    "weather_characteristics": [
+      "cold and windy",
+      "humidity and dampness",
+      "acidic transformation of water"
+    ],
+    "recommendations": {
+      "diet": [
+        "warm, light, and freshly cooked meals",
+        "old barley, wheat, and Shali rice",
+        "small amounts of honey added to all food/drinks"
+      ],
+      "lifestyle": [
+        "Katu and Kashaya Gandusha (pungent/astringent gargle)",
+        "residing in non-humid locations",
+        "herbal powder baths (Udvartana) to prevent skin dampness"
+      ],
+      "avoid": [
+        "daytime sleep",
+        "river water and diluted gruel",
+        "heavy, oily, and raw foods",
+        "excessive liquid intake"
+      ]
+    },
+    "reasoning": {
+      "principle": "conservative derivation",
+      "dosha_effect": "Dampness and weak Agni can lead to sluggishness; astringent gargles and honey specifically counter the excess viscosity of saliva and environmental moisture."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "20",
+      "91",
+      "92",
+      "115"
+    ]
+  },
+  {
+    "prakriti": "Kapha",
+    "season": "Sharad",
+    "season_role": "neutral",
+    "weather_characteristics": [
+      "sudden intense sun exposure",
+      "returning heat"
+    ],
+    "recommendations": {
+      "diet": [
+        "light, and bitter foods",
+        "easily digestible Shali rice, barley, and wheat",
+        "Hamsodaka (purified water)"
+      ],
+      "lifestyle": [
+        "exposure to moonlight in early night",
+        "wearing seasonal flower garlands",
+        "maintaining light and clean apparel"
+      ],
+      "avoid": [
+        "curd",
+        "muscle fats and oils",
+        "daytime sleeping",
+        "alkaline preparations"
+      ]
+    },
+    "reasoning": {
+      "principle": "conservative derivation",
+      "dosha_effect": "Kapha remains stable as Pitta aggravates; diet avoids heavy fats and curd to maintain lightness while transitioning through the returning heat."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "94",
+      "95",
+      "115"
+    ]
+  }
+]

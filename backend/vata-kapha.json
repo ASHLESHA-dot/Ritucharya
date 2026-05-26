@@ -1,0 +1,245 @@
+[
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Hemanta",
+    "weather_characteristics": [
+      "cold wind",
+      "visarga kaala (cooling influence)",
+      "restorative coolness"
+    ],
+    "vulnerable_condition": "Kapha accumulation and risk of Vata aggravation due to cold",
+    "recommendations": {
+      "diet": [
+        "unctuous, sour, and salty foods but not beyond Kapha-accumulating excess",
+        "warm drinking water",
+        "moderate dairy and cane sugar preparations",
+        "black lentil and old rice"
+      ],
+      "lifestyle": [
+        "daily oil massage (Abhyanga)",
+        "applying thick Aguru paste for warmth",
+        "wearing thick, warm clothes",
+        "staying in warm, inner rooms"
+      ],
+      "avoid": [
+        "laghu (light) and ruksha (dry) foods",
+        "inadequate food quantity",
+        "exposure to strong cold winds",
+        "excessive heavy and oily foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warm, unctuous, and heavy routines counter Vata's cold/light nature while preventing the cold environment from causing excessive Kapha stagnation."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "1",
+      "2",
+      "22",
+      "23"
+    ]
+  },
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Shishira",
+    "weather_characteristics": [
+      "extreme cold",
+      "strong dry winds",
+      "increased environmental heavy qualities"
+    ],
+    "vulnerable_condition": "Increased Kapha accumulation and Vata instability",
+    "recommendations": {
+      "diet": [
+        "follow Hemanta regimen",
+        "warm, cooked, nourishing foods like wheat",
+        "ginger, garlic, and Pippali to stimulate Agni",
+        "cane juice and fats"
+      ],
+      "lifestyle": [
+        "daily warm oil massage",
+        "moderate to vigorous exercise (only to half capacity (ardhashakti)) to generate heat",
+        "staying in wind-protected, warm houses",
+        "lukewarm baths"
+      ],
+      "avoid": [
+        "cold and light foods",
+        "daytime sleep",
+        "exposure to cold winds and breezes",
+        "excessive bitter taste",
+        "vata-stimulating foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warming spices and vigorous activity prevent Kapha stagnation while nourishing fats and heat balance Vata's sensitivity to extreme winter cold."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "3",
+      "23",
+      "24"
+    ]
+  },
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Vasanta",
+    "weather_characteristics": [
+      "warming weather",
+      "liquefaction of accumulated Kapha"
+    ],
+    "vulnerable_condition": "Peak Kapha aggravation (congestion) and potential Vata depletion",
+    "recommendations": {
+      "diet": [
+        "warm, light, dry, and easily digestible foods",
+        "priority on Yava (barley) supplemented with Godhuma (wheat)",
+        "pungent and astringent in moderate amounts; bitter only mildly to prevent Vata dryness.",
+        "honey to clear mucus"
+      ],
+      "lifestyle": [
+        "vigorous physical exercise (Vyayama)",
+        "dry massage (Snigdha Udvartana) with herbal powders",
+        "moderate oil application for skin suppleness",
+        "medicated smoking and gargling"
+      ],
+      "avoid": [
+        "daytime sleeping (strictly prohibited)",
+        "heavy dairy and excessive sweets",
+        "cold, deep-fried, and unctuous foods",
+        "excessive sour tastes, moderate sour with warming preparations is acceptable"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Light, dry, and active regimens counter liquefying Kapha; Vata types prioritize barley but include wheat to prevent dryness-induced depletion."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "4",
+      "5",
+      "25"
+    ]
+  },
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Grishma",
+    "weather_characteristics": [
+      "intense heat",
+      "extreme dryness",
+      "dehydrating sun"
+    ],
+    "vulnerable_condition": "Vata accumulation and feelings of depletion",
+    "recommendations": {
+      "diet": [
+        "sweet, cold, and unctuous (snigdha) foods",
+        "ghee and milk with rice",
+        "fresh fruit juices",
+        "leaf mantha with jaggery"
+      ],
+      "lifestyle": [
+        "resting in cool shelters",
+        "wearing light, soft clothing",
+        "applying sandalwood paste"
+      ],
+      "avoid": [
+        "pungent tastes",
+        "strenuous or excessive physical exercise",
+        "staying up at night",
+        "excessive sexual activity",
+        "strong or undiluted alcohol"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Environmental heat and dryness naturally pacify Kapha but cause Vata to accumulate; cooling, unctuous diet and reduced activity prevent depletion."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "6",
+      "7",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Varsha",
+    "weather_characteristics": [
+      "cold and windy",
+      "humidity and dampness",
+      "erratic weather"
+    ],
+    "vulnerable_condition": "Peak Vata aggravation and sluggish digestion (Kapha)",
+    "recommendations": {
+      "diet": [
+        "warm, freshly cooked, and light meals",
+        "old barley, wheat, and Shali rice",
+        "slightly oily foods with sweet, sour, and salty tastes",
+        "small amounts of honey added to food/drinks"
+      ],
+      "lifestyle": [
+        "strict daily routine",
+        "warm oil massage (Abhyanga) using sesame oil",
+        "grounding exercises (slow Yoga/walking)",
+        "travel by covered conveyance"
+      ],
+      "avoid": [
+        "raw salads and raw foods",
+        "cold drinks and dry snacks",
+        "excessive fasting or over-exertion",
+        "exposure to rain and cold winds",
+        "daytime sleep",
+        "river water and excessive liquid intake"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warm, grounding, and oily regimens counter peak Vata aggravation from wind, while honey and light cooked grains manage seasonal Kapha sluggishness."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "8",
+      "28",
+      "29"
+    ]
+  },
+  {
+    "prakriti": "Vata-Kapha",
+    "season": "Sharad",
+    "weather_characteristics": [
+      "sudden intense sun exposure",
+      "returning warmth"
+    ],
+    "vulnerable_condition": "Vata sensitivity to dryness and potential for Pitta-related heat",
+    "recommendations": {
+      "diet": [
+        "sweet and salty foods to balance Vata",
+        "light, bitter foods for seasonal balance",
+        "easily digestible Shali rice, barley, and wheat",
+        "Hamsodaka (purified water) and honey"
+      ],
+      "lifestyle": [
+        "wearing seasonal flower garlands",
+        "clean, light apparel"
+      ],
+      "avoid": [
+        "midday sun exposure",
+        "daytime sleeping",
+        "curd, muscle fats, and oils",
+        "excessive bitter taste",
+        "alkaline preparations"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Returning warmth pacifies Vata, but moderate unctuousness is required to avoid dryness from the season's bitter focus; light grains keep Kapha stable."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "9",
+      "10",
+      "30",
+      "31"
+    ]
+  }
+]

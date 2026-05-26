@@ -1,0 +1,572 @@
+International Research Journal of Ayurveda & Yoga Vol. 8(6), pp. 39-44, June, 2025
+Available online at http://irjay.com
+ISSN: 2581-785X
+DOI: 10.48165/IRJAY.2025.80608
+
+REVIEW ARTICLE
+
+The Inter-Relationship between Prakriti, Diet, and Lifestyle: A
+Review
+Sushant Bhandari1* , Achyut Acharya2
+Consultant Ayurveda Physician, Shrikhanda Ayurveda Centre, Kathmandu, Nepal.
+PG Scholar, Department of Roga Nidana Evam Vikriti Vigyana, National Institute of Ayurveda, Jaipur, Rajasthan, India.
+
+1
+2
+
+ARTICLE INFO
+Article history:
+Received on: 14-05-2025
+Accepted on: 17-06-2025
+Available on: 30-06-2025
+Key words:
+Ayurveda,
+Diet,
+Lifestyle,
+Prakriti,
+Regimen
+
+ABSTRACT
+Ayurveda, the ancient science of life, emphasizes personalized health through the concept of Prakriti (individual
+constitution). This constitutional type forms the basis for prescribing suitable diet and Lifestyle regimens to maintain
+health and prevent disease. It is considered an important concept of Ayurveda that explains individuality. Prakriti is
+a fundamental concept accepted by all Acharyas, falling into the category of Sarvtantra Siddhanta. The concept of
+Prakriti is scattered all over the texts, covering all aspects of health maintenance as well as disease manifestation. This
+review explores the interconnectedness of Prakriti, diet (Ahara), and Lifestyle (Vihara), referencing classical Ayurvedic
+texts. The understanding of this inter-relationship aids in disease susceptibility assessment, treatment planning, and
+promotion of holistic well-being. A deeper understanding of Prakriti allows practitioners to approach health in a truly
+individualized manner, integrating physical, psychological, environmental, and behavioral dimensions.
+
+1. INTRODUCTION
+The present millennium has witnessed several changes in the lifestyle
+patterns of the masses. The alluring world of advertisement has a great
+impact on our day-to-day lives. Imitation has become an integral part
+of our lives. We all are attracted to the things that glitter. But in the
+long run, we ignore the fact that not everything that glitters is not
+gold. To decide the credibility and utility of things, we first have to
+observe, evaluate, and then form our opinions about them. Ayurveda
+science has also propagated different types of Pariksha to assess the
+human nature to its core. Prakriti of an individual is one such tool
+to assess the physical and mental nature of an individual. Acharya
+Arundatta has defined Prakriti as “Shariraswarupama.”[1] With the
+proper understanding of the concept of Prakriti, it becomes easier
+to prescribe an appropriate drug as well as the right kind of diet
+and lifestyle.[2] Ayurveda stressed that one must protect the body at
+foremost by leaving all worldly things because without a healthy body,
+there is nothing in the world to do and for live happy life, health it
+is very essential matter. Nowadays to gain optimum health Prakritibased diet and lifestyle is the first and prime need for society.
+Corresponding Author:
+Sushant Bhandari,
+Consultant Ayurveda Physician, Shrikhanda Ayurveda Centre,
+Kathmandu, Nepal.
+Email: achyut.ayur@gmail.com
+
+1.1. Aim
+To comprehensively review the inter-relationship between Prakriti
+(individual constitution), diet (Ahara), and lifestyle (Vihara) in
+Ayurveda and elucidate their collective role in personalized health
+management, disease prevention, and holistic well-being.
+
+1.2. Objectives
+1.
+2.
+3.
+4.
+
+Conceptual analysis: Examine classical definitions, determinants,
+and classifications of Prakriti, Ahara, and Vihara from
+authoritative Ayurvedic texts.
+Inter-relationship assessment: Investigate how Prakriti influences
+dietary and lifestyle prescriptions and vice versa, emphasizing
+Dosha equilibrium.
+Clinical utility evaluation: Assess the implications of Prakritibased diet and lifestyle for disease susceptibility, treatment
+planning, and preventive healthcare.
+Guideline
+synthesis:
+Consolidate
+Prakriti-specific
+recommendations for diet, daily/seasonal regimens (Dinacharya
+and Ritucharya), and ethical conduct (Sadvrutta).
+
+2. MATERIALS AND METHODS
+This study adopts a literature review approach to examine the conceptual
+and practical integration of Prakriti (individual constitution), Ahara
+
+© 2025 Sushant Bhandari and Achyut Acharya. This is an open-access article distributed under the terms of the Creative Commons Attribution 4.0 International
+License (CC BY 4.0). (https://creativecommons.org/licenses/by/4.0/).
+
+40
+
+Bhandari and Acharya: Relationship between Prakriti, Diet, and Lifestyle 2025; 8(6):39-44
+
+(diet), and Vihara (lifestyle) as presented in classical Ayurvedic
+literature. The review is grounded in a thorough examination of
+primary source materials, including foundational Ayurvedic texts such
+as the Charaka Samhita, Sushruta Samhita, and Ashtanga Hridaya.
+These texts were studied alongside authoritative commentaries and
+interpretations by esteemed Ayurvedic scholars, including Acharya
+Arundatta and Vriddha Vaghbhata, to gain deeper insights into the
+traditional understanding of Prakriti and its implications for health
+management.
+In addition to classical sources, relevant secondary literature – such
+as Ayurvedic manuals, peer-reviewed articles, and contemporary
+research focused on Prakriti-based health interventions – was also
+reviewed. These resources provided context for interpreting classical
+concepts in light of modern perspectives on personalized medicine and
+preventive care.
+The methodology involved the systematic extraction and organization
+of references related to Prakriti, diet, and lifestyle from the selected
+texts. These references were then comparatively analyzed to identify
+the specific dietary and lifestyle recommendations corresponding to
+different Prakriti types. Special attention was given to understanding
+how these practices align with Dosha dominance and seasonal
+variations.
+Finally, the principles extracted from classical texts were synthesized
+into a cohesive conceptual model demonstrating the interrelationship
+among Prakriti, Ahara, and Vihara. This model was further interpreted
+in the context of contemporary health needs to highlight the relevance
+and application of Ayurvedic guidelines in modern preventive and
+personalized medicine.
+
+2.1. Understanding Prakriti
+Prakriti, derived from the root words “Pra” and “Kri,” signifies the
+natural condition or state of anything, its nature, or natural form.[3] It
+is defined as the group of characters inherited prior to birth, formed
+at the time of the union of Shukra (sperm) and Shonita (ovum). This
+inherent constitution is considered largely unchangeable throughout
+life and determines an individual’s unique physical, physiological, and
+psychological traits.[4] Acharya Charaka states that Prakriti is named
+according to the constitutional predominance of a particular Dosha (Vata,
+Pitta, or Kapha). This predominance of Dosha at conception develops
+into seven types of Prakriti: Vata, Pitta, Kapha, Vata-Pitta, Vata-Kapha,
+Pitta-Kapha, and Sama Prakriti (equilibrium of all three Doshas).
+The formation of Deha Prakriti is influenced by several factors at the
+time of Shukra-Shonita union, including the qualities of Shukra and
+Shonita, the position and status of the uterus, the age of the woman,
+the season of conception, the nutrients the fetus receives, and the
+mother’s diet and behavior during pregnancy.[5] Specifically, Shukra
+and Shonita are considered Panchbhautika and contain Tridosha and
+Triguna inherited from parents. Kalagarbhashaya Prakriti relates to
+the season of fertilization and the parents’ age, which influence the
+Dosha variations in Shukra-Shonita.[6] Maturahara Vihara Prakriti
+is derived from the mother’s diet and regimens during menstruation,
+before and after cohabitation, during pregnancy, and after delivery.[7]
+Mahabhuta Vikara Prakriti is formed by the action of sixteen factors,
+including Shukra, Shonita, Rasa (nutritive fluid), and Atma (soul),
+which are composed of the five Mahabhutas.[7]
+Beyond the factors at conception, Prakriti is also influenced by
+Jati (race), Kula (familial inheritance), Desha (geographical or
+agro-climatic location), Kala (seasonal variations and age), and
+
+Pratyatmaniyata (individual variations despite similarities). Acharya
+Vriddha Vaghbhata also adds Bala (strength) as an influencing factor.
+The characteristics of each Dosha Prakriti are extensively described
+in ancient texts based on physical, physiological, psychological, and
+behavioral traits. For instance, Vata Prakriti individuals are generally
+lean, with prominent veins and tendons, rough and dry skin, unsteady
+joints, and scanty hair. They are often talkative, have a feeble voice,
+irregular appetite, and less sweating.[8,9] Pitta Prakriti individuals
+tend to have a delicate body, attractive looks, soft and tender skin
+with moles and freckles, yellowish or coppery complexion, and warm
+body temperature. They are less talkative, have a pleasant voice,
+frequent hunger and thirst, and profuse sweating.[10,11] Kapha Prakriti
+individuals are characterized by a good build, smooth and glossy skin,
+fair complexion, well-knitted joints, and dense, black hair. They are
+calm, don’t get irritated easily, have a deep and influential voice, less
+hunger and thirst, and excessive sleep.[12,13]
+Manasa Prakriti, the psychological constitution, is determined by
+the predominance of the three Mahagunas: Satva, Rajas, and Tamas.
+Satva is associated with purity, knowledge, self-control, and positive
+disposition. Rajas is responsible for hasty actions, restlessness, craving,
+and attachment. Tamas is characterized by lethargy, sluggishness,
+inactivity, and heedlessness.
+
+2.2. Ahara (Diet)
+Ahara, or diet, is considered a fundamental pillar of life and is essential
+for not only the continuity of life but also for achieving optimal
+strength, complexion, and overall health. Ayurveda emphasizes
+that the body and diseases are both influenced by food; wholesome
+(Hita) and unwholesome (Ahita) food are responsible for happiness
+and misery, respectively. The very same factors that, in wholesome
+combination, create living beings, in unwholesome combination, lead
+to various diseases.
+Ayurveda gives equal importance to the food itself (Ahara Dravya)
+and the method of its intake (Ahara Vidhi Vidhana). Ahara Dravya
+are classified as Hitakara (beneficial) and Ahitakara (detrimental).[14]
+Hitakara and Pathya (wholesome) Ahara Dravya, according to different
+Acharyas, including various grains, lentils, salts, water, ghi, meat,
+honey, milk, fruits, and vegetables, are listed in classics. Conversely,
+Ahitakara Ahara Dravya are also listed, such as certain grains, lentils,
+water sources, salts, vegetables, meats, fruits, and milk products.
+Ahara Vidhi Vidhana refers to the system, method, manner, or rules
+for diet intake. Acharya Charaka emphasizes the proper use of food
+preparations considering factors contrary to habitat, time, and the
+user’s own self. The eight factors of Ahara Vidhi Vishesha Ayatana,
+which are responsible for the wholesome and unwholesome effects of
+diet, are Prakriti (natural qualities of the food), Karana (processing),
+Samyoga (combination), Rashi (quantity), Desha (habitat), Kala
+(time), Upayoga Samstha (dietary rules), and Upayokta (the
+consumer).[15] Ayurveda elaborates on these factors, highlighting how
+each influences the digestibility and effect of food on the body. It also
+details dietary rules such as consuming warm and unctuous food,
+eating in proper quantity and after the digestion of the previous meal,
+avoiding contradictory food potencies, eating at a proper place, and
+paying due regard to oneself. Acharya Sushruta provides additional
+descriptive views on Ahara Vidhi, including kitchen regimen, types of
+utensils, dining place, dining time, disadvantages of improper dining
+time, non-edible food, considerations with tasteful foods, and postmeal regimen.[16]
+
+Bhandari and Acharya: Relationship between Prakriti, Diet, and Lifestyle 2025; 8(6):39-44
+The importance of Ahara is further emphasized by Acharya Kashyap that
+no medicament like food is available, and one cannot sustain life without
+food.[17] Wholesome food promotes growth, strength, health, color, and
+keenness of sense organs, while improper use leads to ill health.
+
+2.3. Vihara (Lifestyle)
+Vihara, or Lifestyle, encompasses a person’s typical behaviors, habits,
+customs, and daily activities. In Ayurveda, lifestyle is categorized into
+ideal and faulty. The ideal Lifestyle, known as Swasthavrutta, involves
+aligning daily and seasonal activities with natural rhythms to maintain
+good health. Swasthavrutta includes Dinacharya (daily regimen),
+Ratricharya (night regimen), and Ritucharya (seasonal regimen), as
+well as Sadvrutta (good conduct).[18]
+Dinacharya provides a detailed framework for daily activities, from
+waking up in the morning to sleeping at night. It includes practices like
+brushing teeth, cleaning the tongue, gargling, smoking (Dhumapana),
+nasal application (Nasya), oil application (Abhyanga), bathing, and
+exercise (Vyayama). General advice for daily regimen includes waking
+up early, using lukewarm water, performing exercise according to
+capacity, not stopping natural urges, avoiding daytime sleep (except
+in summer), observing proper food, sleep, and sex, and practicing
+Vyayama regularly.[19]
+Ritucharya outlines seasonal recommendations to balance the Doshas,
+which are more active during specific seasons. The Ayurveda provides
+detailed regimens for Hemanta (early winter), Shishira (extreme
+winter), Vasanta (spring), Grishma (summer), Varsha (rainy season),
+and Sharada (autumn), including dietary and Lifestyle adjustments
+suitable for each season.[20]
+Ratricharya focuses on the night regimen, recommending a light
+dinner and going to bed early. Sadvrutta encompasses good mental,
+social, personal, moral, and religious conduct for a balanced life. The
+Ayurveda lists various conducts one should follow in each of these
+categories.[19]
+The importance of proper lifestyle is highlighted by the fact that
+following these regimens helps restore the normal state of body
+elements, reduces susceptibility to diseases, and even slows down the
+pace of aging. Conversely, faulty lifestyles, such as excessive exercise,
+suppressing natural urges, staying up at night, and daytime sleep, can
+lead to various diseases.
+
+2.4. The Inter-Relationship: Prakriti, Diet, and Lifestyle
+The core of Ayurvedic health lies in the understanding and management
+of the inter-relationship between Prakriti, Diet, and Lifestyle. Prakriti
+serves as the fundamental blueprint, determining an individual’s
+inherent strengths and weaknesses and their predisposition to certain
+imbalances and diseases. Ayurveda states that Prakriti is a deciding
+factor during the prognosis and treatment of diseases.
+Diet and Lifestyle choices have a direct and significant impact on
+maintaining the equilibrium of Doshas and, consequently, the health
+of an individual based on their Prakriti. The Ayurveda explicitly states
+that “Prakriti-based guidelines for diet and Lifestyle result in healthy
+tissues and homeostasis of the body Dosha.” It further explains that a
+Hitakara Ahara for one Prakriti type might be Ahitakara for another.
+For example, a Vata Prakriti person should avoid bitter taste, which
+aggravates Vata, while it helps maintain Pitta equilibrium in a Pitta
+Prakriti person. Similarly, ginger, garlic, and chili, which decrease
+Kapha, can cause ulcers or irritability in a Pitta Prakriti person. This
+
+41
+
+underscores the need for individualized dietary recommendations
+based on Prakriti.
+The Ahara Vidhi Vishesha Ayatana, particularly the “Upayokta” factor,
+emphasizes that every person must consider their own constitution,
+digestive capacity, season, time, and the state of digestion of the
+previous meal when consuming food. This reinforces the idea that
+dietary rules are not universally applicable but must be tailored to the
+individual’s Prakriti and current condition.
+Lifestyle practices also need to be aligned with one’s Prakriti and
+the changing seasons (Ritucharya) to prevent Dosha imbalances. The
+Ayurveda provides specific examples of how Lifestyle choices can
+affect different Prakriti types. For instance, daytime sleep should be
+avoided by Kapha Prakriti individuals but can be suitable for Vata
+Prakriti individuals. Similarly, in Hemanta Ritu, Vata-dominant
+individuals can maximally benefit from the advised Lifestyle, while
+Kapha-dominant individuals need to take special care due to Kapha
+accumulation. In Grishma Ritu, Vata Prakriti individuals should avoid
+Lifestyle practices like staying up at night, exercise, and excessive
+sexual activity, while Pitta Prakriti individuals need to strictly follow
+the advised Lifestyle.[21]
+Specific Lifestyle practices like Dhumapana, Nasya, Gandusha,
+Abhyanga, and Vyayama are also recommended or contraindicated
+based on the individual’s Prakriti and the vitiation of Doshas. For
+example, Sneha Gandusha is recommended for Vata Prakriti to
+counter dryness, while Katu and Kashaya Gandusha are suggested
+for Kapha Prakriti to counter the excess viscosity of saliva. Regular
+oiling of the head is beneficial for Pitta and Vata-dominant Prakriti
+to prevent hair loss and early greying. Udvartana is beneficial for
+Kapha-dominant Prakriti as it reduces Kapha and Meda. The intensity
+of Vyayama should also be adjusted based on the individual’s strength,
+which varies according to Prakriti.
+The Ayurveda further notes that if Vikara Prakriti (nature of disease)
+and the individual’s Prakriti are similar, the disease is difficult to
+manage. This highlights how one’s inherent constitution influences
+their susceptibility to certain diseases and the prognosis. By following
+a diet and Lifestyle that are in accordance with one’s Prakriti,
+individuals can strengthen their inherent resistance and prevent the
+manifestation of diseases to which they are predisposed.
+3. DISCUSSION
+The review establishes Prakriti as the cornerstone of Ayurvedic
+personalized medicine, shaping dietary and lifestyle protocols to
+maintain Dosha equilibrium. Key insights:
+
+3.1. Prakriti Dictates Dietary and Lifestyle Customization
+3.1.1. Diet (Ahara)
+•
+•
+•
+•
+
+Vata-dominant individuals benefit from warm, unctuous foods
+(e.g., ghee, nuts) but must avoid bitter tastes and cold items that
+aggravate Vata.
+Pitta-dominant persons require cooling foods (e.g., coconut,
+sweet fruits) but suffer from pungent spices (e.g., chili and
+ginger), which induce hyperacidity.
+Kapha-dominant types thrive on light, spicy foods (e.g., legumes,
+honey) but are harmed by heavy, oily items (e.g., dairy and excess
+grains).
+The Ahara Vidhi Vishesha Ayatana framework (e.g., Prakriti
+of food, Desha, Kala) ensures diet is tailored to individual
+constitution, digestive capacity (Agni), and environmental context.
+
+42
+
+Bhandari and Acharya: Relationship between Prakriti, Diet, and Lifestyle 2025; 8(6):39-44
+
+3.1.2. Lifestyle (Vihara)
+•
+
+•
+
+•
+
+Dinacharya: Vata types benefit from gentle Abhyanga (oil
+massage) and avoidance of excessive exercise, while Kapha
+types require vigorous Vyayama (exercise) and Udvartana (dry
+powder massage).
+Ritucharya: Seasonal adjustments are critical. Vata worsens
+in winter (Hemanta), necessitating warm routines, whereas
+Pitta exacerbates in summer (Grishma), demanding cooling
+practices.
+Sadvrutta (ethical conduct) mitigates psychological Dosha
+imbalances (e.g., Satva-promoting meditation for Rajas/Tamas
+dominance).
+
+3.2. Health Implications of Prakriti-Based Practices
+3.2.1. Preventive potential
+
+Adherence to Prakriti-aligned routines reduces disease susceptibility.
+For instance:
+•
+Kapha Prakriti individuals following low-fat diets and active
+lifestyles avert obesity and diabetes
+•
+Pitta Prakriti persons avoiding spicy foods and stress prevent
+ulcers and inflammatory disorders.
+
+3.2.2. Therapeutic utility
+
+4. CONCLUSION
+The provided conceptual study of Prakriti in Ayurveda underscores
+the fundamental role of individual constitution in determining health
+and disease susceptibility. The intricate inter-relationship between
+Prakriti, Diet (Ahara), and lifestyle (Vihara) is a cornerstone of
+Ayurvedic preventive and curative medicine. Understanding one’s
+unique Prakriti allows for personalized recommendations regarding
+diet and lifestyle choices that can help maintain the equilibrium of
+Doshas, promote optimal health, and prevent the onset of diseases.
+The detailed guidelines on Hitakara and Ahitakara foods, Ahara Vidhi
+Vidhana, Dinacharya, Ritucharya, and Sadvrutta all emphasize the
+importance of aligning one’s choices with their inherent constitution
+and the changing environment. By adhering to these principles,
+individuals can harmonize their internal environment with the external
+world, leading to a long, healthy, and fulfilling life. The knowledge of
+Prakriti is not only essential for physicians in diagnosing and treating
+diseases but also for every individual seeking to optimize their wellbeing and achieve a state of balance and harmony.
+5. ACKNOWLEDGMENT
+Nil.
+
+When Vikara Prakriti (disease nature) mirrors inherent Prakriti,
+treatment complexity increases (e.g., Vata-type arthritis in Vatadominant individuals). Here, diet/lifestyle interventions become
+adjuvant therapies to Shamana (palliative) and Shodhana (purification)
+procedures.
+
+6. AUTHORS’ CONTRIBUTIONS
+
+3.3. Modern Relevance and Challenges
+
+Nil.
+
+3.3.1. Personalized health
+
+Prakriti assessment offers a holistic alternative to genetic profiling
+in lifestyle medicine, integrating physical, psychological, and
+environmental factors.
+Subjectivity in Prakriti diagnosis
+Limited accessibility to Ayurvedic experts
+Sociocultural shifts favoring standardized
+individualized plans.
+
+3.3.3. Research gaps
+
+Clinical validation of Prakriti-specific
+randomized trials is needed.
+
+7. FUNDING
+
+8. ETHICAL APPROVALS
+This study does not require ethical approval as it is a review study.
+9. CONFLICTS OF INTEREST
+
+3.3.2. Implementation barriers
+•
+•
+•
+
+All the authors contributed equally to the design and execution of the
+article.
+
+Nil.
+diets
+
+interventions
+
+over
+
+through
+
+3.4. The Ayurvedic Health Pyramid: A Unified Framework
+The inter-relationship forms a hierarchical model [Figure 1]:
+•
+Base: Prakriti (constitutional bedrock).
+•
+Middle: Ahara and Vihara (personalized inputs for Dosha
+balance).
+•
+Apex: Swasthya (health) and Arogya (disease-free state).
+This pyramid underscores that disregarding Prakriti disrupts the entire
+system, leading to Dosha vitiation and disease.
+The synergy of Prakriti, Ahara, and Vihara epitomizes Ayurveda’s
+preventive and personalized approach. Future integration with
+technology (e.g., Prakriti assessment apps) and evidence-based
+research can bridge ancient wisdom with contemporary healthcare,
+empowering individuals to achieve Swasthavrutta.
+
+10. DATA AVAILABILITY
+This is an original manuscript and all data are available for only review
+purposes from principal investigators.
+11. PUBLISHERS NOTE
+This journal remains neutral with regard to jurisdictional claims in
+published institutional affiliation.
+REFERENCES
+1.
+
+2.
+3.
+4.
+
+Paradakara HS, editor. Ashtanga hridaya (commentary sarvanga
+sundara of arundatta and ayurveda rasayana of hemadri), sutra sthana,
+ayushkameeya adhyaya, 1/10. Varanasi: Chaukhambha Surbharati
+Rakashana; 2011. p. 8.
+Yadavji T, editor. Charaka samhita (ayurveda dipika commentary
+of chakrapanidatta), vimana sthana, deerghanjeeviteeya adhyaya,
+1/123. Varanasi: Chaukhambha Surbharati Prakashana; 2014. p. 22.
+Shyar-Raja-Radhakantdev-Bahadur, Shabdakalpadrum tritiya bhag.
+Varanasi: Chaukhambha Sanskrita Series; 1961. p. 242.
+Charaka A. Acharya VY, editor. Charak samhita, Sutra sthana
+7/40, ayurveddipika commentary by Chakrapanidatta. Varanasi:
+
+Bhandari and Acharya: Relationship between Prakriti, Diet, and Lifestyle 2025; 8(6):39-44
+
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+
+Chaukhamba Prakashan; 2009.
+Sharma S, editor. Vriddha vagbhata. Ashtanga sangraha with
+sashilekha commentary by Indu. Sharira Sthana 7/40. Varanasi:
+Chowkhamba Sanskrit Series Office; 2012.
+Charaka A. In: Acharya VY, editor. Charak samhita, Sharira sthana
+6/12, Ayurveddipika commentary by chakrapanidatta. Varanasi:
+Chaukhamba Prakashan; 2009.
+Charaka A. In: Acharya VY, editor. Charak samhita, Vimana sthana
+8/95, Ayurveddipika commentary by Chakrapanidatta. Varanasi:
+Chaukhamba Prakashan; 2009.
+Charaka A. In: Acharya VY, editor. Charak samhita, Vimana sthana
+8/98, Ayurveddipika Commentary by Chakrapanidatta. Varanasi:
+Chaukhamba Prakashan; 2009.
+Sharma S, editor. Vriddha vagbhata. Ashtanga sangraha with
+sashilekha commentary by Indu. Sharira Sthana 8/10. 3rd ed. Varanasi:
+Chowkhamba Sanskrit Series Office; 2012.
+Charaka A. Charak samhita, Vimana sthana 8/96, Ayurveddipika
+commentary by Chakrapanidatta. Varanasi: Chaukhamba
+Prakashan; 2009.
+Sushruta A. In: Acharya VY, editor. Sushruta samhita, Sharir sthana
+4/68-71, Nibandha samgraha commentary by Dalhana. Varanasi:
+Chaukhamba Prakashan, 2008.
+Charaka A. In: Acharya VY, editor. Charak samhita, Vimana sthana
+8/96, Ayurveddipika commentary by Chakrapanidatta. Varanasi:
+Chaukhamba Prakashan; 2009.
+Sushruta A. In: Acharya VY, editor. Sushruta samhita, Sharira sthana
+4/72-76, Nibandha samgraha commentary by Dalhana. Varanasi:
+Chaukhamba Prakashan, 2008.
+Charaka A. In: Acharya VY, editor. Charak samhita, Sutra sthana,
+Matrashitiyam adhyaya, 5/12; 38, Ayurveddipika commentary by
+
+43
+
+Chakrapanidatta. Varanasi: Chaukhamba Prakashan; 2009.
+15. Charaka A. In: Acharya VY, editor. Charak samhita, Vimana sthana,
+Rasavimanam adhyaya, 1/21; 235, Ayurveddipika commentary by
+Chakrapanidatta. Varanasi: Varanasi: Chaukhamba Prakashan; 2009.
+16. Jadavaji T, editor. Sushruta samhita (Nibandhasangraha Commentary
+of Dalhanacharya). Sharira sthana, Sarvabhutachinta sharira adhyaya,
+1/6. Varanasi: Chaukhambha Surbharati Prakashana; 2014.
+17. Sharma H. Kashyapa, Kashyapa Samhita (Hindi), Khila Sthana,
+Yusha Nirdeshiya Adhyaya 4/4-6. Varanasi: Chaukhambha Sanskrit
+Sansthana; 2005. p. 378.
+18. Sharma SP, editor. Ashtanga samgraha (Indu teeka), Sutra sthana,
+Dinacharya adhyaya, 3/1; 16. 2nd ed. Varanasi: Chaukhambha
+Sanskrit Series Office; 2008. p. 5.
+19. Paṇs̲ ikar VLŚ, Soman KV, Nighaṇṭu Ratnākara: A compendium of
+the system of the Hindu medicine. Nighantu Ratnakara, 2nd part,
+Dinacharya; 70. With spacious notes Delhi: Chaukhamba Sanskrit;
+Pratishthan.
+20. Sharma SP, editor. Ashtanga samgraha (Indu teeka), Sutra sthana,
+Gandushadi adhyaya, 22/19; 301. 2nd ed. Varanasi: Chaukhambha
+Sanskrit Series Office; 2008. p. 5.
+21. Sharma SP, editor. Ashtanga samgraha (Indu teeka), Sutra sthana,
+Tasyashitiya adhyaya, 6/14-18; 45-46. 2nd ed. Varanasi: Chaukhambha
+Sanskrit Series Office; 2008. p. 5.
+How to cite this article:
+Bhandari S, Acharya A. The Inter-Relationship between Prakriti, Diet, and
+Lifestyle: A Review. IRJAY. [online] 2025;8(6);39-44.
+Available from: https://irjay.com
+DOI link- https://doi.org/10.48165/IRJAY.2025.80608
+
+44
+
+Bhandari and Acharya: Relationship between Prakriti, Diet, and Lifestyle 2025; 8(6):39-44
+
+Figure 1: Ayurvedic health pyramid
+
+

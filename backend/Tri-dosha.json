@@ -1,0 +1,251 @@
+[
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Hemanta",
+    "weather_characteristics": [
+      "cold wind",
+      "visarga kaala (cooling influence)",
+      "restorative coolness"
+    ],
+    "vulnerable_condition": "Kapha accumulation begins while Vata requires warmth to counter environmental cold and  Pitta is in its most stable phase and requires no specific intervention beyond adequate nourishment.",
+    "recommendations": {
+      "diet": [
+        "unctuous, sour, and salty food items",
+        "warm drinking water",
+        "moderate use of dairy and cane sugar products",
+        "black lentil and new rice"
+      ],
+      "lifestyle": [
+        "daily oil massage (Abhyanga)",
+        "wearing thick, warm clothes",
+        "spending time in warm, inner rooms"
+      ],
+      "avoid": [
+        "laghu (light) and ruksha (dry) foods",
+        "inadequate food quantity",
+        "exposure to strong cold winds",
+        "excessive heavy and oily foods"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warm, unctuous, and heavy routines balance Vata's cold/light nature and provide fuel for high seasonal Agni, while moderated unctuousness prevents excessive Kapha stagnation."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "1",
+      "11",
+      "22"
+    ]
+  },
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Shishira",
+    "weather_characteristics": [
+      "extreme winter",
+      "strong dry winds",
+      "aadaan kaala (increasing dryness)"
+    ],
+    "vulnerable_condition": "Increased Kapha accumulation and potential Vata instability due to extreme cold and dryness",
+    "recommendations": {
+      "diet": [
+        "follow Hemanta regimen with focus on sweet taste",
+        "warm, cooked, nourishing foods like wheat and gram flour",
+        "moderate use of warming spices (ginger, garlic, pippali) acceptable because Pitta is in prashama",
+        "dairy and fats to sustain strong digestive fire"
+      ],
+      "lifestyle": [
+        "daily warm oil massage",
+        "moderate to vigorous exercise to generate heat",
+        "staying in wind-protected, warm houses",
+        "lukewarm baths"
+      ],
+      "avoid": [
+        "cold and light foods",
+        "daytime sleep",
+        "exposure to cold winds and breezes",
+        "fasting",
+        "excessive pungent and bitter tastes(allowed in moderation)"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warming and unctuous qualities protect Vata and Pitta from extreme cold/dryness, while increased physical activity and spices prevent excessive Kapha stagnation."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "3",
+      "13",
+      "23",
+      "24"
+    ]
+  },
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Vasanta",
+    "weather_characteristics": [
+      "warming weather",
+      "liquefaction of accumulated Kapha"
+    ],
+    "vulnerable_condition": "Peak Kapha aggravation (congestion) and potential for early Pitta heat accumulation or Vata dryness",
+    "recommendations": {
+      "diet": [
+        "warm, light, dry, and easily digestible foods",
+        "priority on Yava (barley) supplemented with Godhuma (wheat)",
+        "bitter, astringent, and mildly pungent tastes",
+        "honey added to water or food"
+      ],
+      "lifestyle": [
+        "moderate to vigorous physical exercise (Vyayama)",
+        "dry massage (Udvartana) with herbal powders",
+        "moderate oil application to maintain skin suppleness",
+        "lukewarm baths"
+      ],
+      "avoid": [
+        "daytime sleeping (strictly prohibited)",
+        "heavy dairy and excessive sweets",
+        "cold, deep-fried, and unctuous foods",
+        "excessive sour tastes"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Light, dry, and active regimens counter the liquefaction of Kapha, while bitter/astringent tastes manage Pitta and wheat prevents Vata depletion."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "4",
+      "14",
+      "25"
+    ]
+  },
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Grishma",
+    "weather_characteristics": [
+      "intense heat",
+      "extreme dryness",
+      "dehydrating sun rays"
+    ],
+    "vulnerable_condition": "Pitta under environmental heat stress but not yet in official sanchaya phase and Vata accumulation due to heat and dryness",
+    "recommendations": {
+      "diet": [
+        "sweet, cold, liquid, and unctuous food",
+        "ghee and milk with rice",
+        "cooling fruit juices and tender coconut water",
+        "leaf mantha with jaggery"
+      ],
+      "lifestyle": [
+        "resting in cool shelters",
+        "applying sandalwood (Chandana) paste",
+        "wearing light, soft clothing"
+      ],
+      "avoid": [
+        "excessive salty, sour, and pungent tastes",
+        "strenuous or excessive exercise",
+        "spicy and fermented foods",
+        "staying up at night",
+        "midday sun exposure",
+        "undiluted alcohol"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Cooling, hydrating, and unctuous agents mitigate Pitta's heat and prevent Vata accumulation caused by environmental dryness."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "6",
+      "16",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Varsha",
+    "weather_characteristics": [
+      "cold and windy",
+      "humidity and dampness",
+      "acidic transformation of water"
+    ],
+    "vulnerable_condition": "Peak Vata aggravation, Pitta accumulation, and sluggish digestion (Kapha) due to erratic weather",
+    "recommendations": {
+      "diet": [
+        "warm, light, and freshly cooked meals",
+        "old barley, wheat, and shali rice",
+        "moderate unctuousness with sweet, sour, and salty tastes",
+        "honey added to meals to counteract dampness"
+      ],
+      "lifestyle": [
+        "strict daily routine",
+        "gentle warm oil massage (Abhyanga)",
+        "grounding exercises (slow Yoga/walking)",
+        "maintaining skin hygiene (Udvartana)",
+        "residing in non-humid locations",
+        "travel by covered conveyance"
+      ],
+      "avoid": [
+        "raw salads and raw foods",
+        "cold drinks and dry snacks",
+        "excessive fasting and over-exertion",
+        "exposure to rain and cold winds",
+        "river water and excessive liquid intake",
+        "daytime sleep"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Warm, grounding, and cooked foods counter Vata aggravation and sluggish digestion, while lightness and honey prevent Pitta and Kapha imbalances triggered by humidity."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "7",
+      "17",
+      "28"
+    ]
+  },
+  {
+    "prakriti": "Tri-dosha",
+    "season": "Sharad",
+    "weather_characteristics": [
+      "sudden intense sun exposure",
+      "returning warmth"
+    ],
+    "vulnerable_condition": "Peak Pitta aggravation and potential Vata dryness from sudden heat",
+    "recommendations": {
+      "diet": [
+        "sweet, light, and slightly bitter foods",
+        "Tikta Ghee (bitter medicated ghee) and milk",
+        "easily digestible Shali rice, barley, and wheat",
+        "Hamsodaka (purified water) and honey",
+        "moderate salty taste for Vata balance"
+      ],
+      "lifestyle": [
+        "exposure to moonlight in early night",
+        "moonlight walking",
+        "wearing seasonal flower garlands",
+        "purgation (Virechana) to clear excess Pitta (physician supervision mandatory).",
+        "maintaining light and clean apparel"
+      ],
+      "avoid": [
+        "hot, sharp, and spicy foods",
+        "midday sun exposure",
+        "daytime sleeping",
+        "curd, muscle fats, and oils",
+        "alkaline preparations",
+        "excessive bitter taste"
+      ]
+    },
+    "reasoning": {
+      "principle": "Samanya-Vishesha Siddhanta",
+      "dosha_effect": "Cooling and sweet agents counteract peak Pitta heat, while unctuous ghee and moderate salt prevent Vata dryness during the transition."
+    },
+    "evidence_type": "derived",
+    "source": [
+      "9",
+      "19",
+      "30"
+    ]
+  }
+]

@@ -191,10 +191,10 @@ function WeatherPage({ token, handleLogout }) {
 
           <div className="actions">
             <button
-              className="btn accent"
+              className="btn"
               onClick={() => navigate('/ritucharya', { replace: true })}
             >
-              View Personalized Ritucharya →
+              📋 View Recommendations →
             </button>
             <button
               className="btn secondary"

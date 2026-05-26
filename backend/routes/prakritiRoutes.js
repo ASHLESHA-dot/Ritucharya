@@ -6,7 +6,9 @@ const User = require("../models/User");
 const router = express.Router();
 
 // Flask ML Model endpoint
-const ML_MODEL_URL = process.env.ML_MODEL_URL || 'http://127.0.0.1:5000';
+const ML_MODEL_URL = process.env.ML_MODEL_URL || 'http://127.0.0.1:5001';
+
+console.log('ML_MODEL_URL configured as:', ML_MODEL_URL);
 
 // Middleware to verify token
 const verifyToken = (req, res, next) => {
@@ -86,12 +88,16 @@ router.post("/calculate", verifyToken, async (req, res) => {
 // Get features for form (what options are available)
 router.get("/features", async (req, res) => {
     try {
+        console.log(`Fetching features from: ${ML_MODEL_URL}/features`);
         const response = await axios.get(`${ML_MODEL_URL}/features`);
         res.status(200).json(response.data);
     } catch (error) {
+        console.error('Error fetching features:', error.message);
         res.status(500).json({
-            message: 'Error fetching features',
-            error: error.message
+            message: 'Error fetching features from ML model',
+            error: error.message,
+            ml_url: ML_MODEL_URL,
+            hint: `Make sure Flask ML server is running on ${ML_MODEL_URL}`
         });
     }
 });
