@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
-const User = require("../models/User");
 
 const router = express.Router();
 
@@ -22,7 +21,7 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-// Get weather by coordinates and save to database
+// Get weather by coordinates without persisting to database
 router.post('/current', verifyToken, async (req, res) => {
   try {
     const { latitude, longitude } = req.body;
@@ -56,25 +55,15 @@ router.post('/current', verifyToken, async (req, res) => {
       windSpeed: Math.round(weatherResponse.data.wind.speed * 10) / 10,
       city: weatherResponse.data.name,
       country: weatherResponse.data.sys.country,
+      fetchedAt: new Date().toISOString(),
     };
 
-    // Save weather to database
-    const updatedUser = await User.findByIdAndUpdate(
-      req.userId,
-      {
-        current_weather: weatherData,
-        weather_updated_at: new Date()
-      },
-      { new: true }
-    );
-
     res.status(200).json({
-      message: 'Weather data retrieved and saved successfully',
+      message: 'Weather data retrieved successfully',
       weather: weatherData,
-      saved: true,
+      saved: false,
       user: {
-        id: updatedUser._id,
-        weather_updated_at: updatedUser.weather_updated_at
+        id: req.userId,
       }
     });
   } catch (error) {

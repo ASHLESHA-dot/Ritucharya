@@ -45,6 +45,17 @@ const userSchema = new mongoose.Schema({
     vata_score: Number,
     pitta_score: Number,
     kapha_score: Number,
+    answers: {
+      type: Object,
+      default: {},
+    },
+    profile_snapshot: {
+      type: Object,
+      default: {},
+    },
+    submitted_at: {
+      type: Date,
+    },
   },
   prakriti_updated_at: {
     type: Date,

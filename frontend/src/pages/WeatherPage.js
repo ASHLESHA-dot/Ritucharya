@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
@@ -16,11 +16,7 @@ function WeatherPage({ token, handleLogout }) {
     location: '',
   });
 
-  useEffect(() => {
-    requestWeather();
-  }, []);
-
-  const requestWeather = () => {
+  const requestWeather = useCallback(() => {
     setWeatherLoading(true);
     setLocationError('');
 
@@ -41,7 +37,11 @@ function WeatherPage({ token, handleLogout }) {
       setManualWeatherForm(true);
       setWeatherLoading(false);
     }
-  };
+  }, [token]);
+
+  useEffect(() => {
+    requestWeather();
+  }, [requestWeather]);
 
   const fetchWeather = (latitude, longitude) => {
     axios
@@ -55,7 +55,9 @@ function WeatherPage({ token, handleLogout }) {
         }
       )
       .then(response => {
-        setWeatherData(response.data.weather);
+        const enrichedWeather = response.data.weather;
+        setWeatherData(enrichedWeather);
+        sessionStorage.setItem('weatherData', JSON.stringify(enrichedWeather));
       })
       .catch(err => {
         setLocationError('Failed to fetch weather. Please enter manually.');
@@ -100,9 +102,11 @@ function WeatherPage({ token, handleLogout }) {
       icon: 'manual',
       windSpeed: 0,
       feelsLike: Math.round(temp),
+      fetchedAt: new Date().toISOString(),
     };
 
     setWeatherData(manualWeather);
+    sessionStorage.setItem('weatherData', JSON.stringify(manualWeather));
     setManualWeatherForm(false);
   };
 
@@ -192,7 +196,10 @@ function WeatherPage({ token, handleLogout }) {
           <div className="actions">
             <button
               className="btn"
-              onClick={() => navigate('/ritucharya', { replace: true })}
+              onClick={() => navigate('/ritucharya', {
+                replace: true,
+                state: { weatherData },
+              })}
             >
               📋 View Recommendations →
             </button>

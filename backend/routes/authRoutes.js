@@ -94,6 +94,8 @@ router.post('/login', async (req, res) => {
         gender: user.gender,
         bmi: user.bmi,
         bmiCategory: user.bmiCategory,
+        prakriti_data: user.prakriti_data,
+        prakriti_updated_at: user.prakriti_updated_at,
       },
     });
   } catch (error) {

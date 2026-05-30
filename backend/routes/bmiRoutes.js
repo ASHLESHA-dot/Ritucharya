@@ -72,12 +72,15 @@ router.post('/calculate', verifyToken, async (req, res) => {
         id: user._id,
         name: user.name,
         email: user.email,
+        phone: user.phone,
         weight: user.weight,
         height: user.height,
         age: user.age,
         gender: user.gender,
         bmi: user.bmi,
         bmiCategory: user.bmiCategory,
+        prakriti_data: user.prakriti_data,
+        prakriti_updated_at: user.prakriti_updated_at,
       },
     });
   } catch (error) {

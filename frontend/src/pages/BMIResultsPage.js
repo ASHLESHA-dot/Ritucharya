@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../App.css';
 
-function BMIResultsPage({ handleLogout }) {
+function BMIResultsPage({ user, handleLogout }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [bmiData, setBmiData] = useState(null);
@@ -14,7 +14,7 @@ function BMIResultsPage({ handleLogout }) {
     } else {
       navigate('/bmi');
     }
-  }, []);
+  }, [location.state, navigate]);
 
   const getBmiCategoryClass = (category) => {
     const categoryLower = category.toLowerCase();
@@ -30,44 +30,42 @@ function BMIResultsPage({ handleLogout }) {
   }
 
   return (
-    <div className="container">
-      <div className="header">
+    <div className="page-grid page-grid--split">
+      <div className="page-panel page-panel--soft">
+        <div className="eyebrow">BMI complete</div>
         <h1>Your BMI Result</h1>
-        <button className="logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
+        <p className="page-copy">Your body metrics are saved and ready to support the next layer of your wellness profile.</p>
       </div>
 
-      <div className="bmi-result">
-        <h2>BMI Calculation Complete</h2>
-        <div className="bmi-value">{bmiData.bmi}</div>
-        <div className={`bmi-category ${getBmiCategoryClass(bmiData.bmiCategory)}`}>
-          {bmiData.bmiCategory}
-        </div>
-
-        <div className="section">
-          <p style={{ margin: 0 }}><strong>Your Details:</strong></p>
-          <div className="grid-2" style={{ marginTop: 12 }}>
-            <div className="stat-card">
-              <p className="stat-label">Weight</p>
-              <p className="stat-value">{bmiData.weight} kg</p>
-            </div>
-            <div className="stat-card">
-              <p className="stat-label">Height</p>
-              <p className="stat-value">{bmiData.height} cm</p>
-            </div>
-            <div className="stat-card">
-              <p className="stat-label">Age</p>
-              <p className="stat-value">{bmiData.age} years</p>
-            </div>
-            <div className="stat-card">
-              <p className="stat-label">Gender</p>
-              <p className="stat-value">{bmiData.gender}</p>
-            </div>
+      <div className="page-panel">
+        <div className="result-hero">
+          <div className="result-hero__label">BMI</div>
+          <div className="bmi-value">{bmiData.bmi}</div>
+          <div className={`bmi-category ${getBmiCategoryClass(bmiData.bmiCategory)}`}>
+            {bmiData.bmiCategory}
           </div>
         </div>
 
-        <div className="section">
+        <div className="grid-2 grid-2--tight" style={{ marginTop: 18 }}>
+          <div className="stat-card">
+            <p className="stat-label">Weight</p>
+            <p className="stat-value">{bmiData.weight} kg</p>
+          </div>
+          <div className="stat-card">
+            <p className="stat-label">Height</p>
+            <p className="stat-value">{bmiData.height} cm</p>
+          </div>
+          <div className="stat-card">
+            <p className="stat-label">Age</p>
+            <p className="stat-value">{bmiData.age} years</p>
+          </div>
+          <div className="stat-card">
+            <p className="stat-label">Gender</p>
+            <p className="stat-value">{bmiData.gender}</p>
+          </div>
+        </div>
+
+        <div className="section section--compact">
           <p style={{ margin: 0 }}><strong>BMI Categories:</strong></p>
           <p style={{ margin: '10px 0 0 0' }}>Underweight: BMI &lt; 18.5</p>
           <p style={{ margin: '6px 0 0 0' }}>Normal weight: BMI 18.5 - 24.9</p>
@@ -75,11 +73,11 @@ function BMIResultsPage({ handleLogout }) {
           <p style={{ margin: '6px 0 0 0' }}>Obese: BMI ≥ 30.0</p>
         </div>
 
-        <div className="actions">
-          <button className="btn secondary" onClick={() => navigate('/bmi')}>
+        <div className="actions actions--inline">
+          <button className="btn secondary" onClick={() => navigate('/bmi', { state: { editMode: 'bmi' } })}>
             Calculate Again
           </button>
-          <button className="btn" onClick={() => navigate('/prakriti')}>
+          <button className="btn" onClick={() => navigate('/dashboard')}>
             Next
           </button>
         </div>

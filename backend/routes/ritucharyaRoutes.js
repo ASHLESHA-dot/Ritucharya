@@ -5,6 +5,23 @@ const { getRecommendations, getCurrentSeason } = require("../recommendationEngin
 
 const router = express.Router();
 
+const normalizeWeatherData = (weatherData) => {
+  if (!weatherData) {
+    return null;
+  }
+
+  return {
+    temperature: weatherData.temperature,
+    humidity: weatherData.humidity,
+    condition: weatherData.condition,
+    city: weatherData.city || 'Your Location',
+    windSpeed: weatherData.windSpeed,
+    feelsLike: weatherData.feelsLike,
+    description: weatherData.description,
+    fetchedAt: weatherData.fetchedAt || null,
+  };
+};
+
 // Middleware to verify token
 const verifyToken = (req, res, next) => {
   const token = req.headers['authorization']?.split(' ')[1];
@@ -40,8 +57,10 @@ router.get("/recommendations", verifyToken, async (req, res) => {
       });
     }
 
-    // Check if weather data exists
-    if (!user.current_weather || !user.current_weather.condition) {
+    // Get weather from the current request flow instead of the database
+    const weatherData = normalizeWeatherData(req.query.weatherData ? JSON.parse(req.query.weatherData) : null);
+
+    if (!weatherData || !weatherData.condition) {
       return res.status(400).json({
         message: 'Weather data not found',
         suggestion: 'Please load your weather information first'
@@ -51,16 +70,16 @@ router.get("/recommendations", verifyToken, async (req, res) => {
     // Generate recommendations using weather data for accurate season detection
     const recommendations = getRecommendations(
       user.prakriti_data.primary_prakriti,
-      user.current_weather
+      weatherData
     );
 
     // Check if recommendations were found
     if (!recommendations) {
       const { getCurrentSeason } = require("../recommendationEngine");
-      const season = getCurrentSeason(user.current_weather);
+      const season = getCurrentSeason(weatherData);
       
       console.log(`DEBUG: Could not find recommendations for ${user.prakriti_data.primary_prakriti} in ${season}`);
-      console.log(`DEBUG: Weather - Temp: ${user.current_weather.temperature}°C, Humidity: ${user.current_weather.humidity}%, Condition: ${user.current_weather.condition}`);
+      console.log(`DEBUG: Weather - Temp: ${weatherData.temperature}°C, Humidity: ${weatherData.humidity}%, Condition: ${weatherData.condition}`);
       
       return res.status(404).json({
         message: 'No recommendations found',
@@ -68,10 +87,10 @@ router.get("/recommendations", verifyToken, async (req, res) => {
         prakriti: user.prakriti_data.primary_prakriti,
         season: season,
         weather: {
-          temperature: user.current_weather.temperature,
-          humidity: user.current_weather.humidity,
-          condition: user.current_weather.condition,
-          description: user.current_weather.description
+          temperature: weatherData.temperature,
+          humidity: weatherData.humidity,
+          condition: weatherData.condition,
+          description: weatherData.description
         },
         availableSeasons: ['Hemanta', 'Shishira', 'Vasanta', 'Grishma', 'Varsha', 'Sharad']
       });
@@ -79,7 +98,7 @@ router.get("/recommendations", verifyToken, async (req, res) => {
 
     // Return comprehensive response with season detection info
     const { getCurrentSeason } = require("../recommendationEngine");
-    const detectedSeason = getCurrentSeason(user.current_weather);
+    const detectedSeason = getCurrentSeason(weatherData);
     
     res.status(200).json({
       message: 'Recommendations generated successfully',
@@ -87,9 +106,9 @@ router.get("/recommendations", verifyToken, async (req, res) => {
         detected: detectedSeason,
         basis: 'Weather-based calculation (temperature, humidity, condition)',
         weatherFactors: {
-          temperature: user.current_weather.temperature,
-          humidity: user.current_weather.humidity,
-          condition: user.current_weather.condition
+          temperature: weatherData.temperature,
+          humidity: weatherData.humidity,
+          condition: weatherData.condition
         }
       },
       prakriti: {
@@ -102,17 +121,17 @@ router.get("/recommendations", verifyToken, async (req, res) => {
         }
       },
       weather: {
-        temperature: user.current_weather.temperature,
-        humidity: user.current_weather.humidity,
-        condition: user.current_weather.condition,
-        city: user.current_weather.city || 'Your Location',
-        windSpeed: user.current_weather.windSpeed,
-        feelsLike: user.current_weather.feelsLike
+        temperature: weatherData.temperature,
+        humidity: weatherData.humidity,
+        condition: weatherData.condition,
+        city: weatherData.city || 'Your Location',
+        windSpeed: weatherData.windSpeed,
+        feelsLike: weatherData.feelsLike
       },
       recommendations: recommendations,
       lastUpdated: {
         prakriti: user.prakriti_updated_at,
-        weather: user.weather_updated_at
+        weather: weatherData.fetchedAt || null
       }
     });
   } catch (error) {
@@ -142,8 +161,9 @@ router.post("/recommendations", verifyToken, async (req, res) => {
       });
     }
 
-    // Check if weather data exists
-    if (!user.current_weather || !user.current_weather.condition) {
+    const weatherData = normalizeWeatherData(req.body.weatherData);
+
+    if (!weatherData || !weatherData.condition) {
       return res.status(400).json({
         message: 'Weather data not found',
         suggestion: 'Please load your weather information first'
@@ -153,12 +173,12 @@ router.post("/recommendations", verifyToken, async (req, res) => {
     // Generate recommendations
     const recommendations = getRecommendations(
       user.prakriti_data.primary_prakriti,
-      user.current_weather
+      weatherData
     );
 
     // Check if recommendations were found
     if (!recommendations) {
-      const season = getCurrentSeason();
+      const season = getCurrentSeason(weatherData);
       return res.status(404).json({
         message: 'No recommendations found',
         details: `Could not find recommendations for "${user.prakriti_data.primary_prakriti}" in season "${season}"`,
@@ -181,17 +201,17 @@ router.post("/recommendations", verifyToken, async (req, res) => {
         }
       },
       weather: {
-        temperature: user.current_weather.temperature,
-        humidity: user.current_weather.humidity,
-        condition: user.current_weather.condition,
-        city: user.current_weather.city || 'Your Location',
-        windSpeed: user.current_weather.windSpeed,
-        feelsLike: user.current_weather.feelsLike
+        temperature: weatherData.temperature,
+        humidity: weatherData.humidity,
+        condition: weatherData.condition,
+        city: weatherData.city || 'Your Location',
+        windSpeed: weatherData.windSpeed,
+        feelsLike: weatherData.feelsLike
       },
       recommendations: recommendations,
       lastUpdated: {
         prakriti: user.prakriti_updated_at,
-        weather: user.weather_updated_at
+        weather: weatherData.fetchedAt || null
       }
     });
   } catch (error) {

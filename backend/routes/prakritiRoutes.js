@@ -36,6 +36,12 @@ router.post("/calculate", verifyToken, async (req, res) => {
             return res.status(400).json({ message: 'Answers are required' });
         }
 
+        const user = await User.findById(req.userId).select('weight height age gender bmi bmiCategory');
+
+        if (!user) {
+          return res.status(404).json({ message: 'User not found' });
+        }
+
         // Call Flask ML Model API
         const mlResponse = await axios.post(`${ML_MODEL_URL}/predict`, answers);
 
@@ -49,7 +55,17 @@ router.post("/calculate", verifyToken, async (req, res) => {
           all_combinations: mlData.all_combinations || [],
           vata_score: mlData.dosha_scores?.Vata || 0,
           pitta_score: mlData.dosha_scores?.Pitta || 0,
-          kapha_score: mlData.dosha_scores?.Kapha || 0
+          kapha_score: mlData.dosha_scores?.Kapha || 0,
+          answers,
+          profile_snapshot: {
+            weight: user.weight,
+            height: user.height,
+            age: user.age,
+            gender: user.gender,
+            bmi: user.bmi,
+            bmiCategory: user.bmiCategory,
+          },
+          submitted_at: new Date()
         };
 
         // Save to database
@@ -71,6 +87,15 @@ router.post("/calculate", verifyToken, async (req, res) => {
             saved: true,
             user: {
               id: updatedUser._id,
+              name: updatedUser.name,
+              email: updatedUser.email,
+              phone: updatedUser.phone,
+              weight: updatedUser.weight,
+              height: updatedUser.height,
+              age: updatedUser.age,
+              gender: updatedUser.gender,
+              bmi: updatedUser.bmi,
+              bmiCategory: updatedUser.bmiCategory,
               prakriti_data: updatedUser.prakriti_data,
               prakriti_updated_at: updatedUser.prakriti_updated_at
             }

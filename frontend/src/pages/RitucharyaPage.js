@@ -1,26 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 
 function RitucharyaPage({ token, handleLogout }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const [recommendations, setRecommendations] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [prakriti, setPrakriti] = useState(null);
   const [weather, setWeather] = useState(null);
 
-  useEffect(() => {
-    fetchRecommendations();
-  }, []);
+  const getWeatherPayload = () => {
+    const routedWeather = location.state?.weatherData;
+    if (routedWeather) {
+      return routedWeather;
+    }
 
-  const fetchRecommendations = () => {
+    const storedWeather = sessionStorage.getItem('weatherData');
+    return storedWeather ? JSON.parse(storedWeather) : null;
+  };
+
+  const fetchRecommendations = useCallback(() => {
     setLoading(true);
     setError('');
 
+    const weatherData = getWeatherPayload();
+
+    if (!weatherData) {
+      setError('Weather data not found. Please load weather information first.');
+      setLoading(false);
+      return;
+    }
+
     axios
-      .get('/api/ritucharya/recommendations', {
+      .post('/api/ritucharya/recommendations', {
+        weatherData,
+      }, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -38,7 +55,11 @@ function RitucharyaPage({ token, handleLogout }) {
       .finally(() => {
         setLoading(false);
       });
-  };
+  }, [token, location]);
+
+  useEffect(() => {
+    fetchRecommendations();
+  }, [fetchRecommendations]);
 
   const getPrakritiColor = (prakritiType) => {
     const colors = {
@@ -120,126 +141,224 @@ function RitucharyaPage({ token, handleLogout }) {
     );
   };
 
+  const prakritiLabel = prakriti?.primary || recommendations?.prakriti?.primary || '—';
+  const prakritiTypeLabel = prakriti?.type || recommendations?.prakriti?.type || '';
+  const seasonData = weather ? getAyurvedicSeason(weather.temperature, weather.condition) : null;
+  const weatherSummary = weather ? `${weather.condition} • ${weather.temperature}°C` : 'Weather pending';
+
+  const recommendationSource = recommendations?.recommendations || recommendations || {};
+  const recommendationRecord = recommendations || null;
+  const weatherCharacteristics = Array.isArray(recommendationRecord?.weather_characteristics)
+    ? recommendationRecord.weather_characteristics
+    : [];
+  const sourceReferences = Array.isArray(recommendationRecord?.source)
+    ? recommendationRecord.source
+    : [];
+
+  const toTextItems = (items) => {
+    if (!Array.isArray(items)) return [];
+    return items
+      .map((item) => (typeof item === 'string' ? item : item.description || item.title || item.reason || ''))
+      .filter(Boolean);
+  };
+
+  const todaysRitucharya = {
+    Diet: toTextItems(recommendationSource.diet),
+    Lifestyle: toTextItems(recommendationSource.lifestyle || recommendationSource.activities),
+    Avoid: toTextItems(recommendationSource.avoid),
+  };
+
+  const reasoningDetail = typeof recommendations?.reasoning === 'object'
+    ? `${recommendations.reasoning.principle} - ${recommendations.reasoning.dosha_effect}`
+    : recommendations?.reasoning;
+
   return (
-    <div className="container">
-      <div className="header">
-        <h1>Personalized Ritucharya</h1>
-        <button className="logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
+    <div className="ritucharya-report-shell">
+      <div className="ritucharya-report">
+        <section className="report-card ritucharya-hero">
+          <div className="ritucharya-hero__art" aria-hidden="true">
+            <svg viewBox="0 0 320 320" className="ritucharya-hero__svg">
+              <defs>
+                <radialGradient id="ritucharyaGlow" cx="50%" cy="42%" r="58%">
+                  <stop offset="0%" stopColor="rgba(255,255,255,0.98)" />
+                  <stop offset="55%" stopColor="rgba(255,255,255,0.42)" />
+                  <stop offset="100%" stopColor="rgba(212,175,55,0.10)" />
+                </radialGradient>
+                <linearGradient id="ritucharyaLeaf" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stopColor="#A7C4A0" />
+                  <stop offset="100%" stopColor="#1F5A44" />
+                </linearGradient>
+              </defs>
+              <circle cx="160" cy="160" r="132" fill="url(#ritucharyaGlow)" />
+              <circle cx="160" cy="160" r="108" fill="none" stroke="rgba(31,90,68,0.18)" strokeWidth="1.5" />
+              <g stroke="rgba(31,90,68,0.13)" strokeWidth="1.1" fill="none">
+                {[...Array(14)].map((_, index) => {
+                  const angle = (index / 14) * Math.PI * 2;
+                  return <path key={index} d={`M160 160 L ${160 + 118 * Math.cos(angle)} ${160 + 118 * Math.sin(angle)}`} />;
+                })}
+              </g>
+              <g transform="translate(160 160)">
+                {[...Array(8)].map((_, index) => (
+                  <ellipse
+                    key={index}
+                    cx="0"
+                    cy="-78"
+                    rx="18"
+                    ry="38"
+                    fill="url(#ritucharyaLeaf)"
+                    opacity="0.78"
+                    transform={`rotate(${index * 45})`}
+                  />
+                ))}
+              </g>
+              <circle cx="160" cy="160" r="44" fill="#F8F6F1" stroke="rgba(212,175,55,0.45)" strokeWidth="1.5" />
+              <text x="160" y="169" textAnchor="middle" fontSize="36" fill="#1F5A44" fontWeight="700">ॐ</text>
+            </svg>
+          </div>
 
-      {loading && (
-        <div className="weather-card card-muted">
-          <p style={{ textAlign: 'center', margin: 0, color: 'rgba(31,41,55,0.7)' }}>Loading your recommendations...</p>
-        </div>
-      )}
+          <div className="ritucharya-hero__copy">
+            <div className="ritucharya-kicker">🌿 Personalized Ritucharya</div>
+            <h1 className="ritucharya-title">Your Ritucharya recommendations are ready.</h1>
+            <p className="ritucharya-subtitle">
+              Recommendations generated uniquely for your constitution, seasonal context, and live weather conditions.
+            </p>
 
-      {error && (
-        <div className="weather-card" style={{ borderLeft: '4px solid #dc3545' }}>
-          <p style={{ color: '#dc3545', marginBottom: '15px' }}>⚠️ {error}</p>
-          <button className="btn" onClick={() => navigate('/prakriti', { replace: true })}>
-            Complete Prakriti Assessment
-          </button>
-        </div>
-      )}
-
-      {recommendations && !loading && (
-        <>
-          {/* Prakriti & Weather Summary Card */}
-          <div className="weather-card">
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '30px' }}>
-              {/* Prakriti Info */}
-              <div style={{ flex: 1 }}>
-                <h3 style={{ marginTop: 0, marginBottom: '10px', color: '#333' }}>Your Prakriti</h3>
-                <div
-                  style={{
-                    backgroundColor: getPrakritiColor(prakriti.primary),
-                    padding: '15px',
-                    borderRadius: '8px',
-                    color: '#fff',
-                    marginBottom: '15px',
-                  }}
-                >
-                  <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{prakriti.primary}</div>
-                  <div style={{ fontSize: '12px', marginTop: '5px' }}>Type: {prakriti.type}</div>
-                </div>
-                {/* <div style={{ fontSize: '12px' }}>
-                  <div>🔥 Pitta: {(prakriti.scores.pitta * 100).toFixed(1)}%</div>
-                  <div>💨 Vata: {(prakriti.scores.vata * 100).toFixed(1)}%</div>
-                  <div>🌊 Kapha: {(prakriti.scores.kapha * 100).toFixed(1)}%</div>
-                </div> */}
+            <div className="ritucharya-metrics">
+              <div className="ritucharya-metric">
+                <span>For</span>
+                <strong>{prakritiLabel}</strong>
+                <small>{prakritiTypeLabel || 'Your prakriti profile'}</small>
               </div>
-
-              {/* Weather Info */}
-              <div style={{ flex: 1 }}>
-                <h3 style={{ marginTop: 0, marginBottom: '10px', color: '#333' }}>Current Season</h3>
-                <div style={{ textAlign: 'center', padding: '15px', backgroundColor: '#f0f0f0', borderRadius: '8px' }}>
-                  <div style={{ fontSize: '32px', marginBottom: '10px' }}>
-                    {getWeatherIcon(weather.condition)}
-                  </div>
-                  <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#764ba2' }}>
-                    {getAyurvedicSeason(weather.temperature, weather.condition).name}
-                  </div>
-                  <div style={{ fontSize: '13px', color: '#666', marginTop: '5px' }}>
-                    {getAyurvedicSeason(weather.temperature, weather.condition).english}
-                  </div>
-                  <div style={{ fontSize: '11px', color: '#999', marginTop: '8px', fontStyle: 'italic' }}>
-                    {getAyurvedicSeason(weather.temperature, weather.condition).qualities}
-                  </div>
-                  <hr style={{ margin: '10px 0', borderColor: '#ddd' }} />
-                  <div style={{ fontSize: '18px', fontWeight: 'bold' }}>{weather.temperature}°C</div>
-                  <div style={{ fontSize: '14px', color: '#666' }}>{weather.condition}</div>
-                  <div style={{ fontSize: '12px', marginTop: '5px', color: '#999' }}>
-                    {weather.humidity}% Humidity
-                  </div>
-                </div>
+              <div className="ritucharya-metric">
+                <span>Current Season</span>
+                <strong>{seasonData?.name || '—'}</strong>
+                <small>{seasonData?.english || 'Seasonal alignment'}</small>
+              </div>
+              <div className="ritucharya-metric">
+                <span>Current Weather</span>
+                <strong>{weatherSummary}</strong>
+                <small>{weather ? `${weather.humidity}% humidity` : 'Live weather layer'}</small>
               </div>
             </div>
-          </div>
 
-          {/* Reasoning Card */}
-          <div className="weather-card" style={{ backgroundColor: '#f9f9f9' }}>
-            <p style={{ fontSize: '14px', fontStyle: 'italic', color: '#555', margin: 0 }}>
-              ✨ {typeof recommendations.reasoning === 'object' 
-                ? `${recommendations.reasoning.principle} - ${recommendations.reasoning.dosha_effect}`
-                : recommendations.reasoning}
-            </p>
+            <div className="ritucharya-factors">
+              <span>✓ Prakriti</span>
+              <span>✓ Season</span>
+              <span>✓ Weather</span>
+              <span>✓ BMI</span>
+            </div>
           </div>
+        </section>
 
-          {/* Recommendations Cards */}
-          <div className="weather-card">
-            {recommendations.recommendations ? (
-              <>
-                {renderRecommendationCategory('🍲 Diet', recommendations.recommendations.diet)}
-                {renderRecommendationCategory('🌿 Lifestyle', recommendations.recommendations.lifestyle)}
-                {renderRecommendationCategory('⚠️ Avoid', recommendations.recommendations.avoid)}
-              </>
-            ) : (
-              <>
-                {renderRecommendationCategory('🌅 Morning Routine', recommendations.morningRoutine)}
-                {renderRecommendationCategory('🍲 Diet', recommendations.diet)}
-                {renderRecommendationCategory('🧘 Activities', recommendations.activities)}
-                {renderRecommendationCategory('😴 Sleep', recommendations.sleep)}
-                {renderRecommendationCategory('🌿 Lifestyle', recommendations.lifestyle)}
-              </>
-            )}
+        {loading && (
+          <div className="report-card report-card--status">
+            <p className="report-status">Loading your recommendations...</p>
           </div>
+        )}
 
-          {/* Refresh & Navigation */}
-          <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px' }}>
-            <button className="btn" onClick={fetchRecommendations}>
-              ↻ Refresh Recommendations
-            </button>
-            <button
-              className="btn secondary"
-              onClick={() => navigate('/weather', { replace: true })}
-            >
-              ← Back
+        {error && (
+          <div className="report-card report-card--error">
+            <p className="report-error">⚠️ {error}</p>
+            <button className="btn" onClick={() => navigate('/prakriti', { replace: true })}>
+              Complete Prakriti Assessment
             </button>
           </div>
-        </>
-      )}
+        )}
+
+        {recommendations && !loading && (
+          <>
+            <section className="report-card report-explain">
+              <div className="section-eyebrow">Why these recommendations were selected</div>
+              <div className="report-explain__grid">
+                <div className="report-explain__facts">
+                  <div className="report-fact">
+                    <span>Prakriti</span>
+                    <strong>{prakritiLabel}</strong>
+                  </div>
+                  <div className="report-fact">
+                    <span>Season</span>
+                    <strong>{seasonData?.name || '—'}</strong>
+                  </div>
+                  <div className="report-fact">
+                    <span>Weather</span>
+                    <strong>{weather?.condition || '—'}</strong>
+                  </div>
+                  <div className="report-fact">
+                    <span>Vulnerable condition</span>
+                    <strong>{recommendationRecord?.vulnerable_condition || 'Not specified'}</strong>
+                  </div>
+                </div>
+                <div className="report-explain__copy">
+                  <h2>Explainability card</h2>
+                  <p>
+                    Recommendations are generated by combining Ayurvedic Ritucharya principles with your constitutional type and current environmental conditions.
+                  </p>
+                  {recommendationRecord?.reasoning && (
+                    <div className="report-explain__reasoning">
+                      <div className="report-explain__reasoning-item">
+                        <span>Principle</span>
+                        <strong>{recommendationRecord.reasoning.principle || '—'}</strong>
+                      </div>
+                      <div className="report-explain__reasoning-item">
+                        <span>Dosha effect</span>
+                        <p>{recommendationRecord.reasoning.dosha_effect || 'No reasoning text provided.'}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+
+            <section className="report-card report-today">
+              <div className="section-eyebrow">Today's Ritucharya</div>
+              <div className="report-today__header">
+                <h2>Wellness prescription crafted for your body and season</h2>
+                <div className="report-today__badge">Live seasonal guidance</div>
+              </div>
+
+              <div className="report-today__blocks">
+                {[
+                  ['Diet', '🍲', todaysRitucharya.Diet],
+                  ['Lifestyle', '🌿', todaysRitucharya.Lifestyle],
+                  ['Avoid', '⚠️', todaysRitucharya.Avoid],
+                ].map(([title, icon, items]) => (
+                  <div className="report-ritucharya-block" key={title}>
+                    <div className="report-ritucharya-block__title">
+                      <span className="report-ritucharya-block__icon">{icon}</span>
+                      <h3>{title}</h3>
+                    </div>
+                    <div className="report-ritucharya-block__items">
+                      {items.length > 0 ? items.map((item) => (
+                        <div className="report-ritucharya-item" key={item}>
+                          <span className="report-ritucharya-item__bullet" />
+                          <span>{item}</span>
+                        </div>
+                      )) : (
+                        <div className="report-ritucharya-item report-ritucharya-item--empty">No items available.</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="report-card report-update">
+              <div className="report-update__copy">
+                <div className="section-eyebrow">Next update</div>
+                <h2>Recommendations automatically adapt to weather changes, seasonal transitions, and your constitution.</h2>
+              </div>
+              <div className="report-update__actions">
+                <button className="btn" onClick={fetchRecommendations}>
+                  ↻ Refresh Recommendations
+                </button>
+                <button className="btn secondary" onClick={() => navigate('/weather', { replace: true })}>
+                  ← Back
+                </button>
+              </div>
+            </section>
+          </>
+        )}
+      </div>
     </div>
   );
 }
